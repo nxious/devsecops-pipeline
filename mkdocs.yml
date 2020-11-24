@@ -1,0 +1,20 @@
+site_name: Pipelining with DevSecOps
+
+nav:
+- Introduction: 'index.md'
+- Contents: 'contents.md'
+- Problem Statement: 'problem-statement.md'
+- Setting up VMs: 'setting-up-vms.md'
+
+theme: 
+  name: 'material'
+  logo: ''
+  icon: ''
+  palette:
+    primary: 'blue'
+  font:
+    text: Inter
+    code: Roboto Mono
+
+markdown_extensions:
+   - attr_list
