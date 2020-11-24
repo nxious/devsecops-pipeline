@@ -1,0 +1,9 @@
+# Glossary
+
+This page contains uncommon terms used in this report along with their intended meaning:
+
+|Term   |Full form                          |Meaning                                                                                    |
+|---    |---                                |---                                                                                        |
+|DVNA   |Damn Vulnerable Node Application   |An application developed in Node.js to demonstrate OWASP Top 10 Vulnerabilities            |
+|VM     |Virtual Machine                    |An emulation of a computer system within a host system                                     |
+|LTS    |Long Terms Support                 |A lifecycle management policy in which a stable release is maintained for a longer duration|

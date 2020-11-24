@@ -4,12 +4,15 @@ nav:
 - Introduction: 'index.md'
 - Contents: 'contents.md'
 - Problem Statement: 'problem-statement.md'
+- Glossary: 'glossary.md'
 - Setting up VMs: 'setting-up-vms.md'
+- Pipeline Setup: 'pipeline-setup.md'
+- Resources and referenes: 'resources-and-references'
 
 theme: 
   name: 'material'
-  logo: ''
-  icon: ''
+  logo: 'images/logo.png'
+  favicon: 'images/logo.png'
   palette:
     primary: 'blue'
   font:
