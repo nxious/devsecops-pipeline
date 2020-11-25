@@ -2,7 +2,7 @@
 
 ## Objective
 
-This section aims to accomplish the task listed as 1st and 2nd point of [`Task 1`](../problem-statement/#task-1) under the [Problem Statement](../problem-statement)
+This section aims to accomplish the objectives listed as 1st and 2nd point of [`Task 1`](../problem-statement/#task-1) under the [Problem Statement](../problem-statement).
 
 ## System Configuration
 
@@ -18,11 +18,23 @@ The guide was sufficient and covered all the required steps including installati
 
 Jenkins is the leading open-source automation server. We will be using this tool to build our Continuos Integration (CI) pipeline for an application.
 
-To install Jenkins on Ubuntu Server 18.04, I followed the official guide for Linux listed on Jenkin's website.
+To install Jenkins on Ubuntu Server 18.04, I followed the official guide for Linux listed on Jenkin's website which can be found [here](https://www.jenkins.io/doc/book/installing/linux/#debianubuntu){target="_blank"}.
+
+![Jenkins Setup](images/Jenkins.png)
+
+I proceeded with the `Install suggested plugins` option as guided by my mentors. 
+
+**Note: ** Upon trying for the first time, some core plugins failed to install due to issues in the VM. I resolved all the errors by rebuilding the VM and switching to the weekly release instead of the LTS release.
+
+After the setup was complete and the plugins finished installing, I was greeted by the Jenkins dashboard:
+
+![Jenkins Dashboard](images/Jenkins-dashboard.png)
 
 ## Choosing the application
 
 The application that I have chosen for my pipeline is [DVNA (Damn Vulnerable Node Application)](https://github.com/appsecco/dvna){target="_blank"}. It is a simple NodeJS application to demonstrate OWASP Top 10 Vulnerabilities and guide on fixing and avoiding these vulnerabilities. 
+
+An app of this nature will allow us to 
 
 ## Configuring the application VM
 

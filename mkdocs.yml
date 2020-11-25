@@ -5,9 +5,10 @@ nav:
 - Contents: 'contents.md'
 - Problem Statement: 'problem-statement.md'
 - Glossary: 'glossary.md'
+- Deploying the report: 'deploying-the-report.md'
 - Setting up VMs: 'setting-up-vms.md'
 - Pipeline Setup: 'pipeline-setup.md'
-- Resources and referenes: 'resources-and-references'
+- Resources and referenes: 'resources-and-references.md'
 
 theme: 
   name: 'material'
