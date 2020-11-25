@@ -6,6 +6,7 @@ The following are the various contents of this report as per the problem stateme
 - [Contents](../contents)
 - [Problem Statement](../problem-statement)
 - [Glossary](../glossary)
+- [Deploying the report](../deploying-the-report)
 - [Setting up VMs](../setting-up-vms)
 - [Pipeline Setup](../pipeline-setup)
-- [Resources and referenes](../resources-and-references)
+- [Resources and references](../resources-and-references)

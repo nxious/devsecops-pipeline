@@ -1,4 +1,7 @@
 site_name: Pipelining with DevSecOps
+site_description: Documentation for Managing a DevSecOps Pipeline with Secure Development and Operations
+site_author: Rahul
+site_url: https://devsecops.nxio.us
 
 nav:
 - Introduction: 'index.md'
@@ -8,7 +11,7 @@ nav:
 - Deploying the report: 'deploying-the-report.md'
 - Setting up VMs: 'setting-up-vms.md'
 - Pipeline Setup: 'pipeline-setup.md'
-- Resources and referenes: 'resources-and-references.md'
+- Resources and references: 'resources-and-references.md'
 
 theme: 
   name: 'material'

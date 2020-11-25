@@ -10,7 +10,7 @@ The project requires setting up two virtual machines using Ubuntu 18.04 LTS as t
 
 The installation was performed using the following guide : [Ubuntu 18.04 Virtual Machine Setup](https://codebots.com/library/techies/ubuntu-18-04-virtual-machine-setup){target="_blank"}
 
-The guide was sufficient and covered all the required steps including installation of OpenSSH server. 
+The guide was sufficient and covered all the required steps including installation of the OpenSSH server. 
 
 **Note: ** The network adapters were set to Bridged mode in order to allow independent IP assignment on my router itself. This allows me to access the servers via SSH and via a browser on the host machine and allows the Virtual Machines to act as real machines from a network point of view.
 
@@ -34,15 +34,13 @@ After the setup was complete and the plugins finished installing, I was greeted 
 
 The application that I have chosen for my pipeline is [DVNA (Damn Vulnerable Node Application)](https://github.com/appsecco/dvna){target="_blank"}. It is a simple NodeJS application to demonstrate OWASP Top 10 Vulnerabilities and guide on fixing and avoiding these vulnerabilities. 
 
-An app of this nature will allow us to 
-
 ## Configuring the application VM
 
-To need to install and configure the application (DVNA), I have followed the guide included in the Github readme of the application which can be found [here](https://github.com/appsecco/dvna#manual-setup){target="_blank"}.
+To deploy the application (DVNA), I followed the guide included in the Github readme which can be found [here](https://github.com/appsecco/dvna#manual-setup){target="_blank"}. I used my personal fork of the application so that I can make changes to the application in the future.
 
 The application requires a MySQL server for which I followed DigitalOcean's guide which can be found [here](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-18-04){target="_blank"}.
 
-After installing the application, MySQL configuration needs to be performed. The application's guide tells us to define the following system variables containing the database information:
+For launching the application, MySQL configuration needs to be performed. The application's guide tells us to define the following system variables containing the database information:
 
 ```
 export MYSQL_USER=dvna
@@ -52,7 +50,7 @@ export MYSQL_HOST=127.0.0.1
 export MYSQL_PORT=3306
 ```
 
-Once all the configuration is completed, we can access the application by visiting `http://VM-IP:9000` and voilà:
+Once all the configuration is completed, we can access the application by visiting `http://VM-IP:9000` in a browser:
 
 ![DVNA Deployed!](images/DVNA.png)
 

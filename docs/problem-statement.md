@@ -9,6 +9,5 @@
 ## Task 2
 
 1. Document the steps taken to perform the tasks in the problem statement and any errors faced.
-2. Build the documentation using [MkDocs](https://www.mkdocs.org){target="_blank"}.
-3. Deploy the documentation using [Netlify](https://www.netlify.app){target="_blank"}.
-4. Setup a custom domain for the documentation.
+2. Build and deploy the documentation.
+
