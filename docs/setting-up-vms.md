@@ -50,7 +50,9 @@ export MYSQL_HOST=127.0.0.1
 export MYSQL_PORT=3306
 ```
 
-Once all the configuration is completed, we can access the application by visiting `http://VM-IP:9000` in a browser:
+If we use the export command, the variables will reset after every reboot. To avoid this, I moved the commands to a bash script which runs before the application and exports the environment variables called `env.sh`.
+
+Once all the configuration is completed, we can launch the app using `npm start` and access the application by visiting `http://VM-IP:9000` in a browser:
 
 ![DVNA Deployed!](images/DVNA.png)
 
