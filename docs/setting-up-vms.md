@@ -50,7 +50,7 @@ export MYSQL_HOST=127.0.0.1
 export MYSQL_PORT=3306
 ```
 
-If we use the export command, the variables will reset after every reboot unless defined in the .bashrc file. While automating this application, we will provide these variables through the `jenkinsfile`. To test the VM setup, I executed these commands indvidually.
+If we use the export command, the variables will reset after every reboot unless defined in the .bashrc file. While automating this application, we will provide these variables through the `jenkinsfile`. To test the VM setup, I executed these commands individually.
 
 Once all the configuration is completed, we can launch the app using `npm start` and access the application by visiting `http://VM-IP:9000` in a browser:
 

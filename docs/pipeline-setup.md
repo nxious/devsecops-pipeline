@@ -12,7 +12,7 @@ In Jenkins, a pipeline is a group of events or jobs which are interlinked with o
 
 We have already setup Jenkins on a VM in the previous section. Now we will be using Jenkins to build a pipeline which will be responsible for fetching the latest application code from Github, building it and then copying it over to the application VM and deploying it.
 
-Jenkins provides a friendly web-interface to achieve all this. Equipped with the official pipeling building [guide](https://www.jenkins.io/doc/pipeline/tour/hello-world/){target="_blank"}, I took the following steps in order to setup the pipeline:
+Jenkins provides a friendly web-interface to achieve all this. Equipped with the official pipelining building [guide](https://www.jenkins.io/doc/pipeline/tour/hello-world/){target="_blank"}, I took the following steps in order to setup the pipeline:
 
 ### General
 
@@ -59,16 +59,31 @@ pipeline {
                     ssh common@192.168.1.7 "cd dvna && pm2 stop DVNA"
                     ssh common@192.168.1.7 "rm -rf dvna && mkdir dvna"
                     rsync -r * common@192.168.1.7:~/dvna
-                    ssh -T common@192.168.1.7 "cd dvna && MYSQL_USER=${MYSQL_USER} MYSQL_DATABASE=${MYSQL_DATABASE} MYSQL_PASSWORD=${MYSQL_PASSWORD} MYSQL_HOST=${MYSQL_HOST} MYSQL_PORT=${MYSQL_PORT} pm2 start --name=DVNA npm -- start"
+                    ssh -T common@192.168.1.7 "cd dvna && MYSQL_USER=${MYSQL_USER} MYSQL_DATABASE=${MYSQL_DATABASE} MYSQL_PASSWORD=${MYSQL_PASSWORD} MYSQL_HOST=${MYSQL_HOST} MYSQL_PORT=${MYSQL_PORT} pm2 start --name=DVNA npm -- start && pm2 save"
                 '''
             }
         }
     }
 }
 ```
-
 **Note: ** While using individual shell commands, make sure that you keep a track of the directories. Each SSH command will set the `PWD` to the root of the home directory of the user. My earlier approach consisted of single line sh commands to remove old build, copy new build and then execute it. I face the error where my app was not found by node as I was not in the correct directory.
+
+We will be using [`pm2`](https://pm2.keymetrics.io/){target="_blank"} which is a process manager for Node.js. It will allow us to run the application in the background and start/stop the application easily.
+
+**Note: **pm2 won't be able to find the app after reboot of the VM. To prevent this, we will use the `pm2 save` command which will save the state of running apps before rebooting.
 
 The application required environment variables setup for it to function properly. These were passed directly to the node application in the last step.
 
+To prevent accidental exposure of credentials via the `jenkinsfile`, I have used a feature of Jenkins known as `Secrets`. This allows us to define credentials in the Jenkins dashboard and use them wherever we need using `credentials(ID)` function. The credentials show up masked as `****` in the logs as well.
+
 **Note: ** There are many other ways to pass environment variables to the application server, however the method above worked best for my situation. You can use Jenkins plugins, shell scripts etc. depending upon you use case and purpose.
+
+Once all this is done, we can commit the `jenkinsfile` to our repository and hit `Build Now` in the Jenkins control panel.
+
+![Jenkins build now](images/Jenkins-build.png)
+
+If the build is successful, we can access our app using the IP of the application VM.
+
+![DVNA Deployed using Jenkins](images/DVNA.png)
+
+We can check logs to see how our commands were executed and what was their output. The log also helps us debug in case any of the stage fails.
