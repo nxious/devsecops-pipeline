@@ -60,6 +60,6 @@ Once all the configuration is completed, we can launch the app using `npm start`
 
 ## Setting up SSH access
 
-I setup SSH access to the application server from the `jenkins` user on the Jenkins server. This was done in order to allow Jenkins to issue commands to the application server while deploying the application. This was done using the guide [here](https://www.tecmint.com/ssh-passwordless-login-using-ssh-keygen-in-5-easy-steps/){target="_blank"}.
+I setup SSH access to the application server from the `Jenkins` user on the Jenkins server. This was done in order to allow Jenkins to issue commands to the application server while deploying the application. This was done using the guide [here](https://www.tecmint.com/ssh-passwordless-login-using-ssh-keygen-in-5-easy-steps/){target="_blank"}.
 
 Once the public key was setup on the application server, SSH was possible without providing any passwords or keys. The configuration automatically handles the key exchanges.

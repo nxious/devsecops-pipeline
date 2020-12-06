@@ -6,9 +6,7 @@ This section aims at completing the objectives listed as [`Task 2`](../problem-s
 
 ## Need for documentation
 
-The presence of documentation assists with all parts of an application and it enhances the quality of the project. It aims at transferring the knowledge to other developers, allow further development and maintenance.
-
-A well documented project 
+The presence of documentation assists with all parts of an application and it enhances the quality of the project. It aims at transferring the knowledge to other developers, allow further development and introduce ease of maintenance.
 
 ## Tools and methodology
 
@@ -38,7 +36,7 @@ nav:
 - Deploying the report: 'deploying-the-report.md'
 - Setting up VMs: 'setting-up-vms.md'
 - Pipeline Setup: 'pipeline-setup.md'
-- Resources and referenes: 'resources-and-references.md'
+- Resources and references: 'resources-and-references.md'
 
 theme: 
   name: 'material'
