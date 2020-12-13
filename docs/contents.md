@@ -9,5 +9,6 @@ The following are the various contents of this report as per the problem stateme
 - [Deploying the report](../deploying-the-report)
 - [Setting up VMs](../setting-up-vms)
 - [Pipeline Setup](../pipeline-setup)
-- [Software Composition Analysis](../software-coomposition-analysis.md)
+- [Software Composition Analysis (SCA)](../software-composition-analysis)
+- [Static Ananlysis (SAST)](../static-analysis)
 - [Resources and references](../resources-and-references)

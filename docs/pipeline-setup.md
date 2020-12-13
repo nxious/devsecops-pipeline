@@ -70,7 +70,7 @@ pipeline {
 
 We will be using [`pm2`](https://pm2.keymetrics.io/){target="_blank"} which is a process manager for Node.js. It will allow us to run the application in the background and start/stop the application easily.
 
-**Note: **pm2 won't be able to find the app after reboot of the VM. To prevent this, we will use the `pm2 save` command which will save the state of running apps before rebooting.
+**Note: **pm2 won't be able to find the app after reboot of the VM. To prevent this, we will use the `pm2 save` command which will save the state of running apps before rebooting. We can reload the processes using `pm2 reserruct` which we will combine with `pm2 delete` in order to stop multiple active instances of the same application.
 
 The application required environment variables setup for it to function properly. These were passed directly to the node application in the last step.
 

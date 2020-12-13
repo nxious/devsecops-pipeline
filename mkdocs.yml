@@ -12,6 +12,7 @@ nav:
 - Setting up VMs: 'setting-up-vms.md'
 - Pipeline Setup: 'pipeline-setup.md'
 - Software Composition Analysis: 'software-composition-analysis.md'
+- Static Analysis (SAST): 'static-analysis.md'
 - Resources and references: 'resources-and-references.md'
 
 theme: 
