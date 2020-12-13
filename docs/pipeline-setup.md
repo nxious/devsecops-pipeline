@@ -70,11 +70,11 @@ pipeline {
 
 We will be using [`pm2`](https://pm2.keymetrics.io/){target="_blank"} which is a process manager for Node.js. It will allow us to run the application in the background and start/stop the application easily.
 
-**Note: **pm2 won't be able to find the app after reboot of the VM. To prevent this, we will use the `pm2 save` command which will save the state of running apps before rebooting. We can reload the processes using `pm2 reserruct` which we will combine with `pm2 delete` in order to stop multiple active instances of the same application.
+**Note: **pm2 won't be able to find the app after rebooting the VM. To prevent this, we will use the `pm2 save` command which will save the state of running apps before rebooting. We can reload the processes using `pm2 resurrect` which we will combine with `pm2 delete` in order to stop multiple active instances of the same application.
 
 The application required environment variables setup for it to function properly. These were passed directly to the node application in the last step.
 
-To prevent accidental exposure of credentials via the `jenkinsfile`, I have used a feature of Jenkins known as `Secrets`. This allows us to define credentials in the Jenkins dashboard and use them wherever we need using `credentials(ID)` function. The credentials show up masked as `****` in the logs as well.
+To prevent accidental exposure of credentials via the `jenkinsfile`, I have used a feature of Jenkins known as `Secrets`. This allows us to define credentials in the Jenkins dashboard and use them wherever we need using the `credentials(ID)` function. The credentials show up masked as `****` in the logs as well.
 
 **Note: ** There are many other ways to pass environment variables to the application server, however the method above worked best for my situation. You can use Jenkins plugins, shell scripts etc. depending upon you use case and purpose.
 
@@ -86,4 +86,4 @@ If the build is successful, we can access our app using the IP of the applicatio
 
 ![DVNA Deployed using Jenkins](images/DVNA.png)
 
-We can check logs to see how our commands were executed and what was their output. The log also helps us debug in case any of the stage fails.
+We can check logs to see how our commands were executed and what was their output. The logs also help us in debugging the pipeline.
