@@ -2,7 +2,7 @@
 
 ## Objective
 
-This section aims to accomplish the objective listed as 5th point of [`Task 1`](../problem-statement/#task-1) under the [Problem Statement](../problem-statement).
+This section aims to accomplish the objective listed as 6<sup>th</sup> point of [`Task 1`](../problem-statement/#task-1) under the [Problem Statement](../problem-statement).
 
 ## What is SAST?
 
@@ -11,6 +11,8 @@ SAST is testing the application source code, byte code and binaries for bugs and
 While SCA allows us to monitor the components, SAST helps us analyze the source code of the application. Further differences between SCA and SAST are described very well in [this article](https://resources.whitesourcesoftware.com/blog-whitesource/sast-vs-sca){target="_blank"} from WhiteSource.
 
 ## Tools used for SAST
+
+Each tool used was added as a new stage in the `jenkinsfile`. 
 
 ### [njsscan](https://github.com/ajinabraham/njsscan){target="_blank"}
 
@@ -38,6 +40,9 @@ The documentation provides us with the [command line options](https://github.com
 njsscan -o ~/reports/nodejsscan-report.json --json  ~/workspace/DVNA/
 exit 0
 ```
+
+- `-o`: Defines the output path.
+- `--json`: Output to be presented in `JSON` format.
 
 This script was included in the `jenkinsfile` with the following syntax:
 
@@ -127,7 +132,7 @@ The tool requires an initial authentication with your account on snyk.io. You ca
 
 Authentication is also possible by using the API token which is available on the [account page](https://app.snyk.io/account){target="_blank"}.
 
-The API token was supplied to the script using the same approach as [`audit.js`](https://www.npmjs.com/package/auditjs) in the SCA phase, by using the `withCredentials()` function and defining the API token as a secret in Jenkins.
+The API token was supplied to the script using the same approach as [`audit.js`](../software-composition-analysis/#auditjs) in the SCA phase, by using the `withCredentials()` function and defining the API token as a secret in Jenkins.
 
 The shell script for this tool was as follows:
 
@@ -139,6 +144,9 @@ snyk auth $SNYK_API_KEY
 snyk test --json > ~/reports/snyk-report.json
 exit 0
 ```
+
+- `test`: Tells snyk to run the test.
+- `--json`: Output to be printed in `JSON` format.
 
 This script was implemented as a stage in the `jenkinsfile`:
 
@@ -156,6 +164,74 @@ stage ('Performind snyk.io analysis') {
 
 ![snyk.io Dashboard](images/snyk.png)
 
+### [SonarQube Scanner](https://www.sonarqube.org/){target="_blank"}
+
+SonarQube is an open-source tool used to analyze source code, manage source code quality and . It is split into multiple components, with a server being the base and additional tools used in sync with the server, in our case the [SonarQube Scanner](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/){target="_blank"}.
+
+#### Installation
+
+The complete installation is split into multiple steps, starting with setting up the server, configuring the server in Jenkins and installing the SonarQube plugin for the scanner to work.
+
+I followed [this guide](https://medium.com/@harith.sankalpa/how-to-integrate-sonarqube-into-your-node-js-ts-application-for-better-analysis-of-your-code-91d830e80ec3){target="_blank"} for installation and configuration of SonarQube.
+
+##### Server setup
+
+To install the SonarQube server, we need to download the `zip` available on the [SonarQube website](https://www.sonarqube.org/downloads/){target="_blank"}. We can download the file using the `wget` command :
+
+```
+wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-8.6.0.39681.zip
+```
+
+This will save the file in the current directory. We need to unzip the archive by using the `unzip` command. After that we need to navigate to `sonarqube-8.6.0.39681/bin/linux-x86-64` and run `sonar.sh start` in order to start the server.
+
+Once we start the server, we can access it at `http://SERVER_IP:9000`. On the initial login we will use the default credentials `admin:admin` as stated in the [official guide](https://docs.sonarqube.org/latest/instance-administration/security/){target="_blank"}. Upon changing the password we are greeted by the SonarQube dashboard.
+
+We need to generate a token for the user authentication which will be used in further steps. Navigate to `My Account > Security > Tokens`, enter the desired token name and generate the token. We need to store this token immediately as this will not be visible later.
+
+We will define the token as a Jenkins secret with the name `SONARQUBE_TOKEN`. This can be done in 
+
+Once we have the server up and running, we need to configure its details in the SonarQube plugin for Jenkins. 
+
+##### Plugin Setup
+
+Since we will be using the [`Sonar Scanner`](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner-for-jenkins/){target="_blank"} addon for scanning our project, we need to install the component. It is available as a Jenkins plugin which we can install by navigating to `Manage Jenkins > Manage Plugins > Available`, searching for the plugin `Sonar Scanner` and installing it. Now we need to configure the SonarQube server and the Scanner in Jenkins.
+
+Navigate to `Manage Jenkins > Configure System > SonarQube servers` in the Jenkins dashboard. Click on `Enable injection of SonarQube server configuration as build environment variables`, this option allows us to use the server configuration for the SonarQube Scanner which we will install in the next step. Set the name of the server and define the IP address for the same. We also need to provide an authentication token which we stored as a Jenkins secret earlier.
+
+![SonarQube Server Configuration](images/sonarqube_server_configuration.png)
+
+##### Scanner Setup
+
+To configure the installation of SonarQube Scanner, we navigate to `Manage Jenkins > Global Tool Configuration > SonarQube Scanner`, click the `SonarQube Scanner installations` button, use the `Add SonarQube Scanner` option and configure it to fetch the latest version of the scanner binary from [Maven Central Repoistory](https://mvnrepository.com/artifact/org.sonarsource.scanner.maven/sonar-maven-plugin){target="_blank"} and install it in the environment automatically.
+
+![SonarQube Scanner Installation](images/sonarqube_scanner_installations.png)
+
+#### Usage
+
+Since we are using the SonarQube plugin in Jenkins, we can generate the `jenkinsfile` syntax using the `Generate Syntax` option in the Jenkins project dashboard. 
+
+```
+stage ('Performing SonarQube analysis') {
+    environment {
+        scannerHome = tool 'SonarQubeScanner'
+    }
+
+    steps {
+        withSonarQubeEnv ('SonarQube') {
+            sh '${scannerHome}/bin/sonar-scanner -Dsonar.projectKey="DVNA" -Dsonar.projectBaseDir="/var/lib/jenkins/workspace/DVNA"'
+        }
+    }
+}
+```
+
+**Note: ** I was having some issues in implementing the Scanner with jenkinsfile, all issues were cleared using [this answer](https://stackoverflow.com/questions/48557886/.how-to-execute-sonarqube-scanner-in-jenkins-declarative-pipeline-without-maven-a){target="_blank"}, which provided me with the correct syntax.
+
+Once the scanner has analyzed the application, the results are posted to the SonarQube dashboard which can be accessed using `http://SERVER_IP:9000`. The report provides a list of all the bugs and vulnerabilities.
+
+![SonarQube Dashboard](images/sonarqube.png)
+
+**Note: **Both, the SonarQube Server and Scanner are available as Docker images which allow for easier use and configuration of the tool.
+
 ### SAST Reports
 
-All of the reports generated by various tools were stored in JSON format under the `/reports/SAST/` folder located in the default home directory of the Jenkins user (/var/lib/jenkins).
+All of the reports generated by various tools were stored in JSON format under the `reports` folder located in the default home directory of the Jenkins user at `/var/lib/jenkins`.

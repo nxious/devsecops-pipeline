@@ -13,6 +13,7 @@ nav:
 - Pipeline Setup: 'pipeline-setup.md'
 - Software Composition Analysis: 'software-composition-analysis.md'
 - Static Analysis (SAST): 'static-analysis.md'
+- SAST Tools comparison: 'sast-tools-comparison.md'
 - Resources and references: 'resources-and-references.md'
 
 theme: 

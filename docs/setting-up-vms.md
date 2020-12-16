@@ -2,7 +2,7 @@
 
 ## Objective
 
-This section aims to accomplish the objectives listed as 1st and 2nd point of [`Task 1`](../problem-statement/#task-1) under the [Problem Statement](../problem-statement).
+This section aims to accomplish the objectives listed as 1<sup>st</sup> and 2<sup>nd</sup> point of [`Task 1`](../problem-statement/#task-1) under the [Problem Statement](../problem-statement).
 
 ## System Configuration
 
