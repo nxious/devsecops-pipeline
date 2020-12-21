@@ -16,7 +16,7 @@ Implementation of the following tools was done using a new `Freestyle Project` i
 
 ZAP is an open-source web application security scanner. It is one of the most active projects from OWASP and has been given flagship status. ZAP uses its spider to crawl through the application and scans all the discovered pages automatically, which are later attacked using the active scanner to perform the initial assessment of the application.
 
-ZAP scans an application using two methods: active scanning and passive scanning. Active scanning attempts to find potential vulnerabilities by using known attacks against the selected targets by using predefined set of rules (policies). Passive scanning works by monitoring the HTTP messages (requests and responses) exchanged with the application without any modifications. 
+ZAP scans an application using two methods: active scanning and passive scanning. Active scanning attempts to find potential vulnerabilities by using known attacks against the selected targets by using a predefined set of rules (policies). Passive scanning works by monitoring the HTTP messages (requests and responses) exchanged with the application without any modifications. 
 
 #### Installation
 

@@ -32,7 +32,7 @@ njsscan was able to identify a total of `26` issues of different types in our ap
 |A6: Security Misconfiguration  |CWE-693: Protection Mechanism Failure                                                          |13                     |
 |A8: Insecure Deserialization   |CWE-502: Deserialization of Untrusted Data                                                     |1                      |
 
-The complete report can be accessed [here](){target="_blank"}.
+The complete report can be accessed [here](/reports/nodejsscan-report.json){target="_blank"}.
 
 ### insider
 
@@ -58,7 +58,7 @@ Total		    0
 
 The reason for not providing an actual security score is the lack of RegEx based SAST rules for Javascript in insider. Since it is an open-source tool, the rule set is limited.
 
-The complete reportsnake be accessed [here](){target="_blank"}.
+The complete reportsnake be accessed [here](/reports/insider-report.json){target="_blank"}.
 
 ### snyk.io
 
@@ -86,13 +86,15 @@ The following vulnerabilities were classified as Medium Severity:
 |Arbitrary Code Execution   |mathjs@3.10.1      |494            |
 |Arbitrary Code Execution   |mathjs@3.10.1      |494            |       
 
-The complete report can be accessed [here](){target="_blank"}.
+The complete report can be accessed [here](/reports/snyk-report.json){target="_blank"}.
 
 ### Sonarqube Scanner
 
-Sonarqube Scanner provided us with a report that comprised of `5` bugs and `0` vulnerabilities. All of the bugs were related to `Unexpected missing generic font family` which seems to be a syntax error, making Sonarqube Scanner the least useful tool. 
+Sonarqube Scanner provided us with a report that comprised of `5` bugs and `0` vulnerabilities. All of the bugs were related to `Unexpected missing generic font family` which seems to be a syntax/linting error, making Sonarqube Scanner the least useful tool among the bunch. 
 
 Upon a check of their website, I discovered that they offer only a fraction of rules for Javascript as compared to Java/C#/C or C++, due to which it failed at identifying vulnerabilities in our application which is entirely node.js based.
+
+The report is only accessible using the SonarQube server's dashboard.
 
 ## Conclusion
 
