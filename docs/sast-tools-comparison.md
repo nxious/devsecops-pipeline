@@ -12,12 +12,12 @@ A multi-tool approach allows us to have a more thorough analysis of the applicat
 
 The table below provides a quick summary of the tools and their outcomes:
 
-|Rank|Name|Vulnerabilities|
-|---|---|---|
-|1|njsscan|26|
-|2|snyk.io|12|
-|3|insider|3|
-|4|Sonarqube Scanner|0|
+|Rank   |Name               |Vulnerabilities|
+|---    |---                |---            |
+|1      |njsscan            |26             |
+|2      |snyk.io            |12             |
+|3      |insider            |3              |
+|4      |Sonarqube Scanner  |0              |
 
 ### njsscan
 
@@ -32,17 +32,19 @@ njsscan was able to identify a total of `26` issues of different types in our ap
 |A6: Security Misconfiguration  |CWE-693: Protection Mechanism Failure                                                          |13                     |
 |A8: Insecure Deserialization   |CWE-502: Deserialization of Untrusted Data                                                     |1                      |
 
+The complete report can be accessed [here](){target="_blank"}.
+
 ### insider
 
 insider was able to identify `3` vulnerabilities, which were dependency-based. 
 
-|Title|CWE|Severity|Dependency Name|
-|----|----|----|----|
-|Code Execution through IIFE|CWE-502|Critical|node-serialize|
-|Arbitrary Code Execution|CWE-94|Critical|math.js@3.17.0|
-|Arbitrary Code Execution|CWE-94|Critical|math.js@3.17.0|
+|Title                      |CWE    |Severity   |Dependency Name|
+|----                       |----   |----       |----           |
+|Code Execution through IIFE|CWE-502|Critical   |node-serialize |
+|Arbitrary Code Execution   |CWE-94 |Critical   |math.js@3.17.0 |
+|Arbitrary Code Execution   |CWE-94 |Critical   |math.js@3.17.0 |
 
-However it gave the application code a score of `100/100` which means it was unable to scan the application properly.
+However, it gave the application code a score of `100/100` which means it was unable to scan the application properly.
 
 ```
 Score Security 100/100
@@ -54,7 +56,9 @@ Low		        0
 Total		    0 
 ``` 
 
-The reason for not providing an actual security score is the lack of RegEx based SAST rules for Javascript in insider. Since it is an open source tool, the rule set is limited.
+The reason for not providing an actual security score is the lack of RegEx based SAST rules for Javascript in insider. Since it is an open-source tool, the rule set is limited.
+
+The complete reportsnake be accessed [here](){target="_blank"}.
 
 ### snyk.io
 
@@ -62,25 +66,27 @@ snyk was able to identify `9` High Priority issues and `3` Medium Priority issue
 
 The following vulnerabilities are High Severity and have a high priority score:
 
-|Title|Introduced through|Priority Score|
-|---|---|---|
-|Denial of Service (DoS)|express-fileupload@0.4.0|704|
-|Arbitrary Code Execution|mathjs@3.10.1|704|
-|Arbitrary Code Execution|node-serialize@0.0.4|704|
-|Prototype Pollution|express-fileupload@0.4.0|696|
-|Arbitrary Code Execution|mathjs@3.10.1|654|
-|Insecure Encryption|bcrypt@1.0.3|589|
-|Arbitrary Code Execution|mathjs@3.10.1|579|
-|Arbitrary Code Execution|mathjs@3.10.1|579|
-|Prototype Pollution|mathjs@3.10.1|579|
+|Title                      |Introduced through         |Priority Score |
+|---                        |---                        |---            |
+|Denial of Service (DoS)    |express-fileupload@0.4.0   |704            |
+|Arbitrary Code Execution   |mathjs@3.10.1              |704            |
+|Arbitrary Code Execution   |node-serialize@0.0.4       |704            |
+|Prototype Pollution        |express-fileupload@0.4.0   |696            |
+|Arbitrary Code Execution   |mathjs@3.10.1              |654            |
+|Insecure Encryption        |bcrypt@1.0.3               |589            |
+|Arbitrary Code Execution   |mathjs@3.10.1              |579            |
+|Arbitrary Code Execution   |mathjs@3.10.1              |579            |
+|Prototype Pollution        |mathjs@3.10.1              |579            |
 
 The following vulnerabilities were classified as Medium Severity:
 
-|Title|Introduced through|Priority Score|
-|---|---|---|
-|Cryptographic Issues|bcrypt@1.0.3|616|
-|Arbitrary Code Execution|mathjs@3.10.1|494|
-|Arbitrary Code Execution|mathjs@3.10.1|494|
+|Title                      |Introduced through |Priority Score |
+|---                        |---                |---            |
+|Cryptographic Issues       |bcrypt@1.0.3       |616            |
+|Arbitrary Code Execution   |mathjs@3.10.1      |494            |
+|Arbitrary Code Execution   |mathjs@3.10.1      |494            |       
+
+The complete report can be accessed [here](){target="_blank"}.
 
 ### Sonarqube Scanner
 

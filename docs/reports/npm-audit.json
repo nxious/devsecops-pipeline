@@ -1,0 +1,93 @@
+{
+  "actions": [
+    {
+      "isMajor": true,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 551,
+          "path": "mathjs",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 552,
+          "path": "mathjs",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 819,
+          "path": "mathjs>typed-function",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "mathjs",
+      "target": "8.1.0"
+    },
+    {
+      "isMajor": true,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 1216,
+          "path": "express-fileupload",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "express-fileupload",
+      "target": "1.2.0"
+    },
+    {
+      "isMajor": true,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 1553,
+          "path": "bcrypt",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "bcrypt",
+      "target": "5.0.0"
+    },
+    {
+      "action": "review",
+      "module": "node-serialize",
+      "resolves": [
+        {
+          "id": 311,
+          "path": "node-serialize",
+          "dev": false,
+          "bundled": false,
+          "optional": false
+        }
+      ]
+    }
+  ],
+  "advisories": [],
+  "muted": [],
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 1,
+      "moderate": 1,
+      "high": 1,
+      "critical": 3
+    },
+    "dependencies": 280,
+    "devDependencies": 0,
+    "optionalDependencies": 0,
+    "totalDependencies": 280
+  },
+  "runId": "45de78d4-e1c3-4404-a2c5-e073c3562aea"
+}
+

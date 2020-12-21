@@ -1,0 +1,1116 @@
+{
+  "vulnerabilities": [
+    {
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "alternativeIds": [],
+      "creationTime": "2020-06-21T13:48:43.962695Z",
+      "credit": [
+        "pool683"
+      ],
+      "cvssScore": 7.5,
+      "description": "## Overview\n[bcrypt](https://www.npmjs.com/package/bcrypt) is an A library to help you hash passwords.\n\nAffected versions of this package are vulnerable to Insecure Encryption. Data is truncated wrong when its length is greater than 255 bytes.\n## Remediation\nUpgrade `bcrypt` to version 5.0.0 or higher.\n## References\n- [GitHub Issue](https://github.com/kelektiv/node.bcrypt.js/issues/776)\n- [GitHub PR 1](https://github.com/kelektiv/node.bcrypt.js/pull/806)\n- [GitHub PR 2](https://github.com/kelektiv/node.bcrypt.js/pull/807)\n",
+      "disclosureTime": "2020-06-21T13:43:00Z",
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "5.0.0"
+      ],
+      "functions": [],
+      "functions_new": [],
+      "id": "SNYK-JS-BCRYPT-572911",
+      "identifiers": {
+        "CVE": [
+          "CVE-2020-7689"
+        ],
+        "CWE": [
+          "CWE-326"
+        ],
+        "NSP": [
+          1553
+        ]
+      },
+      "language": "js",
+      "modificationTime": "2020-07-01T15:32:37.487609Z",
+      "moduleName": "bcrypt",
+      "packageManager": "npm",
+      "packageName": "bcrypt",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2020-07-01T15:32:37Z",
+      "references": [
+        {
+          "title": "GitHub Issue",
+          "url": "https://github.com/kelektiv/node.bcrypt.js/issues/776"
+        },
+        {
+          "title": "GitHub PR 1",
+          "url": "https://github.com/kelektiv/node.bcrypt.js/pull/806"
+        },
+        {
+          "title": "GitHub PR 2",
+          "url": "https://github.com/kelektiv/node.bcrypt.js/pull/807"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "<5.0.0"
+        ]
+      },
+      "severity": "high",
+      "severityWithCritical": "high",
+      "title": "Insecure Encryption",
+      "from": [
+        "dvna@0.0.1",
+        "bcrypt@1.0.3"
+      ],
+      "upgradePath": [
+        false,
+        "bcrypt@5.0.0"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "bcrypt",
+      "version": "1.0.3"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N/E:P/RL:O/RC:R",
+      "alternativeIds": [],
+      "creationTime": "2020-07-01T13:46:34.670518Z",
+      "credit": [
+        "Felix"
+      ],
+      "cvssScore": 5.9,
+      "description": "## Overview\n[bcrypt](https://www.npmjs.com/package/bcrypt) is an A library to help you hash passwords.\n\nAffected versions of this package are vulnerable to Cryptographic Issues. When hashing a password containing an ASCII NUL character, that character acts as the string terminator. Any following characters are ignored.\n## Remediation\nUpgrade `bcrypt` to version 5.0.0 or higher.\n## References\n- [GitHub Issue](https://github.com/kelektiv/node.bcrypt.js/issues/774)\n- [GitHub PR](https://github.com/kelektiv/node.bcrypt.js/pull/807)\n",
+      "disclosureTime": "2020-01-13T13:45:13Z",
+      "exploit": "Proof of Concept",
+      "fixedIn": [
+        "5.0.0"
+      ],
+      "functions": [],
+      "functions_new": [],
+      "id": "SNYK-JS-BCRYPT-575033",
+      "identifiers": {
+        "CVE": [],
+        "CWE": [
+          "CWE-310"
+        ]
+      },
+      "language": "js",
+      "modificationTime": "2020-07-01T15:32:37.273210Z",
+      "moduleName": "bcrypt",
+      "packageManager": "npm",
+      "packageName": "bcrypt",
+      "patches": [],
+      "proprietary": true,
+      "publicationTime": "2020-07-01T15:32:37.471739Z",
+      "references": [
+        {
+          "title": "GitHub Issue",
+          "url": "https://github.com/kelektiv/node.bcrypt.js/issues/774"
+        },
+        {
+          "title": "GitHub PR",
+          "url": "https://github.com/kelektiv/node.bcrypt.js/pull/807"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "<5.0.0"
+        ]
+      },
+      "severity": "medium",
+      "severityWithCritical": "medium",
+      "title": "Cryptographic Issues",
+      "from": [
+        "dvna@0.0.1",
+        "bcrypt@1.0.3"
+      ],
+      "upgradePath": [
+        false,
+        "bcrypt@5.0.0"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "bcrypt",
+      "version": "1.0.3"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "alternativeIds": [],
+      "creationTime": "2019-10-22T12:22:54.665794Z",
+      "credit": [
+        "Roman Burunkov"
+      ],
+      "cvssScore": 9.8,
+      "description": "## Overview\n[express-fileupload](https://github.com/richardgirges/express-fileupload) is a file upload middleware for express that wraps around busboy.\n\nAffected versions of this package are vulnerable to Denial of Service (DoS). The package does not limit file name length.\n## Details\n\nA cross-site scripting attack occurs when the attacker tricks a legitimate web-based application or site to accept a request as originating from a trusted source.\n\nThis is done by escaping the context of the web application; the web application then delivers that data to its users along with other trusted dynamic content, without validating it. The browser unknowingly executes malicious script on the client side (through client-side languages; usually JavaScript or HTML)  in order to perform actions that are otherwise typically blocked by the browser’s Same Origin Policy.\n\nֿInjecting malicious code is the most prevalent manner by which XSS is exploited; for this reason, escaping characters in order to prevent this manipulation is the top method for securing code against this vulnerability.\n\nEscaping means that the application is coded to mark key characters, and particularly key characters included in user input, to prevent those characters from being interpreted in a dangerous context. For example, in HTML, `<` can be coded as  `&lt`; and `>` can be coded as `&gt`; in order to be interpreted and displayed as themselves in text, while within the code itself, they are used for HTML tags. If malicious content is injected into an application that escapes special characters and that malicious content uses `<` and `>` as HTML tags, those characters are nonetheless not interpreted as HTML tags by the browser if they’ve been correctly escaped in the application code and in this way the attempted attack is diverted.\n \nThe most prominent use of XSS is to steal cookies (source: OWASP HttpOnly) and hijack user sessions, but XSS exploits have been used to expose sensitive information, enable access to privileged services and functionality and deliver malware. \n\n### Types of attacks\nThere are a few methods by which XSS can be manipulated:\n\n|Type|Origin|Description|\n|--|--|--|\n|**Stored**|Server|The malicious code is inserted in the application (usually as a link) by the attacker. The code is activated every time a user clicks the link.|\n|**Reflected**|Server|The attacker delivers a malicious link externally from the vulnerable web site application to a user. When clicked, malicious code is sent to the vulnerable web site, which reflects the attack back to the user’s browser.| \n|**DOM-based**|Client|The attacker forces the user’s browser to render a malicious page. The data in the page itself delivers the cross-site scripting data.|\n|**Mutated**| |The attacker injects code that appears safe, but is then rewritten and modified by the browser, while parsing the markup. An example is rebalancing unclosed quotation marks or even adding quotation marks to unquoted parameters.|\n\n### Affected environments\nThe following environments are susceptible to an XSS attack:\n\n* Web servers\n* Application servers\n* Web application environments\n\n### How to prevent\nThis section describes the top best practices designed to specifically protect your code: \n\n* Sanitize data input in an HTTP request before reflecting it back, ensuring all data is validated, filtered or escaped before echoing anything back to the user, such as the values of query parameters during searches. \n* Convert special characters such as `?`, `&`, `/`, `<`, `>` and spaces to their respective HTML or URL encoded equivalents. \n* Give users the option to disable client-side scripts.\n* Redirect invalid requests.\n* Detect simultaneous logins, including those from two separate IP addresses, and invalidate those sessions.\n* Use and enforce a Content Security Policy (source: Wikipedia) to disable any features that might be manipulated for an XSS attack.\n* Read the documentation for any of the libraries referenced in your code to understand which elements allow for embedded HTML.\n\n## Remediation\nUpgrade `express-fileupload` to version 1.1.6-alpha.6 or higher.\n## References\n- [GitHub PR](https://github.com/richardgirges/express-fileupload/pull/171)\n",
+      "disclosureTime": "2019-10-18T11:17:09Z",
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.1.6-alpha.6"
+      ],
+      "functions": [],
+      "functions_new": [],
+      "id": "SNYK-JS-EXPRESSFILEUPLOAD-473997",
+      "identifiers": {
+        "CVE": [],
+        "CWE": [
+          "CWE-79"
+        ],
+        "NSP": [
+          1216
+        ]
+      },
+      "language": "js",
+      "modificationTime": "2020-06-12T14:37:03.104573Z",
+      "moduleName": "express-fileupload",
+      "packageManager": "npm",
+      "packageName": "express-fileupload",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2019-10-22T15:08:40Z",
+      "references": [
+        {
+          "title": "GitHub PR",
+          "url": "https://github.com/richardgirges/express-fileupload/pull/171"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.6-alpha.6"
+        ]
+      },
+      "severity": "high",
+      "severityWithCritical": "critical",
+      "title": "Denial of Service (DoS)",
+      "from": [
+        "dvna@0.0.1",
+        "express-fileupload@0.4.0"
+      ],
+      "upgradePath": [
+        false,
+        "express-fileupload@1.1.6"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "express-fileupload",
+      "version": "0.4.0"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:P/RL:O/RC:C",
+      "alternativeIds": [],
+      "creationTime": "2020-07-29T15:43:45.868695Z",
+      "credit": [
+        "po6ix"
+      ],
+      "cvssScore": 7.5,
+      "description": "## Overview\n[express-fileupload](https://github.com/richardgirges/express-fileupload) is a file upload middleware for express that wraps around busboy.\n\nAffected versions of this package are vulnerable to Prototype Pollution. If the `parseNested` option is enabled, sending a corrupt HTTP request can lead to denial of service or arbitrary code execution.\n\n## Details\n\nPrototype Pollution is a vulnerability affecting JavaScript. Prototype Pollution refers to the ability to inject properties into existing JavaScript language construct prototypes, such as objects. JavaScript allows all Object attributes to be altered, including their magical attributes such as `_proto_`, `constructor` and `prototype`. An attacker manipulates these attributes to overwrite, or pollute, a JavaScript application object prototype of the base object by injecting other values.  Properties on the `Object.prototype` are then inherited by all the JavaScript objects through the prototype chain. When that happens, this leads to either denial of service by triggering JavaScript exceptions, or it tampers with the application source code to force the code path that the attacker injects, thereby leading to remote code execution.\n\nThere are two main ways in which the pollution of prototypes occurs:\n\n-   Unsafe `Object` recursive merge\n    \n-   Property definition by path\n    \n\n### Unsafe Object recursive merge\n\nThe logic of a vulnerable recursive merge function follows the following high-level model:\n```\nmerge (target, source)\n\n  foreach property of source\n\n    if property exists and is an object on both the target and the source\n\n      merge(target[property], source[property])\n\n    else\n\n      target[property] = source[property]\n```\n<br>  \n\nWhen the source object contains a property named `_proto_` defined with `Object.defineProperty()` , the condition that checks if the property exists and is an object on both the target and the source passes and the merge recurses with the target, being the prototype of `Object` and the source of `Object` as defined by the attacker. Properties are then copied on the `Object` prototype.\n\nClone operations are a special sub-class of unsafe recursive merges, which occur when a recursive merge is conducted on an empty object: `merge({},source)`.\n\n`lodash` and `Hoek` are examples of libraries susceptible to recursive merge attacks.\n\n### Property definition by path\n\nThere are a few JavaScript libraries that use an API to define property values on an object based on a given path. The function that is generally affected contains this signature: `theFunction(object, path, value)`\n\nIf the attacker can control the value of “path”, they can set this value to `_proto_.myValue`. `myValue` is then assigned to the prototype of the class of the object.\n\n## Types of attacks\n\nThere are a few methods by which Prototype Pollution can be manipulated:\n\n| Type |Origin  |Short description |\n|--|--|--|\n| **Denial of service (DoS)**|Client  |This is the most likely attack. <br>DoS occurs when `Object` holds generic functions that are implicitly called for various operations (for example, `toString` and `valueOf`). <br> The attacker pollutes `Object.prototype.someattr` and alters its state to an unexpected value such as `Int` or `Object`. In this case, the code fails and is likely to cause a denial of service.  <br>**For example:** if an attacker pollutes `Object.prototype.toString` by defining it as an integer, if the codebase at any point was reliant on `someobject.toString()` it would fail. |\n |**Remote Code Execution**|Client|Remote code execution is generally only possible in cases where the codebase evaluates a specific attribute of an object, and then executes that evaluation.<br>**For example:** `eval(someobject.someattr)`. In this case, if the attacker pollutes `Object.prototype.someattr` they are likely to be able to leverage this in order to execute code.|\n|**Property Injection**|Client|The attacker pollutes properties that the codebase relies on for their informative value, including security properties such as cookies or tokens.<br>  **For example:** if a codebase checks privileges for `someuser.isAdmin`, then when the attacker pollutes `Object.prototype.isAdmin` and sets it to equal `true`, they can then achieve admin privileges.|\n\n## Affected environments\n\nThe following environments are susceptible to a Prototype Pollution attack:\n\n-   Application server\n    \n-   Web server\n    \n\n## How to prevent\n\n1.  Freeze the prototype— use `Object.freeze (Object.prototype)`.\n    \n2.  Require schema validation of JSON input.\n    \n3.  Avoid using unsafe recursive merge functions.\n    \n4.  Consider using objects without prototypes (for example, `Object.create(null)`), breaking the prototype chain and preventing pollution.\n    \n5.  As a best practice use `Map` instead of `Object`.\n\n### For more information on this vulnerability type:\n\n[Arteau, Oliver. “JavaScript prototype pollution attack in NodeJS application.” GitHub, 26 May 2018](https://github.com/HoLyVieR/prototype-pollution-nsec18/blob/master/paper/JavaScript_prototype_pollution_attack_in_NodeJS.pdf)\n\n## Remediation\nUpgrade `express-fileupload` to version 1.1.10 or higher.\n## References\n- [GitHub Issue](https://github.com/richardgirges/express-fileupload/issues/236)\n- [GitHub PR](https://github.com/richardgirges/express-fileupload/commit/9fca550f08a9dc07cc3500921f4fa7879cf88b8f)\n- [POSIX Vulnerability Blog](https://blog.p6.is/Real-World-JS-1/)\n",
+      "disclosureTime": "2020-07-29T15:08:59Z",
+      "exploit": "Proof of Concept",
+      "fixedIn": [
+        "1.1.10"
+      ],
+      "functions": [],
+      "functions_new": [],
+      "id": "SNYK-JS-EXPRESSFILEUPLOAD-595969",
+      "identifiers": {
+        "CVE": [
+          "CVE-2020-7699"
+        ],
+        "CWE": [
+          "CWE-400"
+        ],
+        "GHSA": [
+          "GHSA-9wcg-jrwf-8gg7"
+        ]
+      },
+      "language": "js",
+      "modificationTime": "2020-08-09T07:13:28.440844Z",
+      "moduleName": "express-fileupload",
+      "packageManager": "npm",
+      "packageName": "express-fileupload",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2020-07-30T15:28:18Z",
+      "references": [
+        {
+          "title": "GitHub Issue",
+          "url": "https://github.com/richardgirges/express-fileupload/issues/236"
+        },
+        {
+          "title": "GitHub PR",
+          "url": "https://github.com/richardgirges/express-fileupload/commit/9fca550f08a9dc07cc3500921f4fa7879cf88b8f"
+        },
+        {
+          "title": "POSIX Vulnerability Blog",
+          "url": "https://blog.p6.is/Real-World-JS-1/"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.1.10"
+        ]
+      },
+      "severity": "high",
+      "severityWithCritical": "high",
+      "title": "Prototype Pollution",
+      "from": [
+        "dvna@0.0.1",
+        "express-fileupload@0.4.0"
+      ],
+      "upgradePath": [
+        false,
+        "express-fileupload@1.1.10"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "express-fileupload",
+      "version": "0.4.0"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "alternativeIds": [],
+      "creationTime": "2020-10-07T15:39:34.767700Z",
+      "credit": [
+        "Alessio Della Libera (d3lla)"
+      ],
+      "cvssScore": 7.3,
+      "description": "## Overview\n[mathjs](https://github.com/josdejong/mathjs) is a math library for JavaScript and Node.js. It features a flexible expression parser with support for symbolic computation, comes with a large set of built-in functions and constants, and offers an integrated solution to work with diff.\n\nAffected versions of this package are vulnerable to Prototype Pollution via the `deepExtend function` that runs upon configuration updates.\n\n## Details\n\nPrototype Pollution is a vulnerability affecting JavaScript. Prototype Pollution refers to the ability to inject properties into existing JavaScript language construct prototypes, such as objects. JavaScript allows all Object attributes to be altered, including their magical attributes such as `_proto_`, `constructor` and `prototype`. An attacker manipulates these attributes to overwrite, or pollute, a JavaScript application object prototype of the base object by injecting other values.  Properties on the `Object.prototype` are then inherited by all the JavaScript objects through the prototype chain. When that happens, this leads to either denial of service by triggering JavaScript exceptions, or it tampers with the application source code to force the code path that the attacker injects, thereby leading to remote code execution.\n\nThere are two main ways in which the pollution of prototypes occurs:\n\n-   Unsafe `Object` recursive merge\n    \n-   Property definition by path\n    \n\n### Unsafe Object recursive merge\n\nThe logic of a vulnerable recursive merge function follows the following high-level model:\n```\nmerge (target, source)\n\n  foreach property of source\n\n    if property exists and is an object on both the target and the source\n\n      merge(target[property], source[property])\n\n    else\n\n      target[property] = source[property]\n```\n<br>  \n\nWhen the source object contains a property named `_proto_` defined with `Object.defineProperty()` , the condition that checks if the property exists and is an object on both the target and the source passes and the merge recurses with the target, being the prototype of `Object` and the source of `Object` as defined by the attacker. Properties are then copied on the `Object` prototype.\n\nClone operations are a special sub-class of unsafe recursive merges, which occur when a recursive merge is conducted on an empty object: `merge({},source)`.\n\n`lodash` and `Hoek` are examples of libraries susceptible to recursive merge attacks.\n\n### Property definition by path\n\nThere are a few JavaScript libraries that use an API to define property values on an object based on a given path. The function that is generally affected contains this signature: `theFunction(object, path, value)`\n\nIf the attacker can control the value of “path”, they can set this value to `_proto_.myValue`. `myValue` is then assigned to the prototype of the class of the object.\n\n## Types of attacks\n\nThere are a few methods by which Prototype Pollution can be manipulated:\n\n| Type |Origin  |Short description |\n|--|--|--|\n| **Denial of service (DoS)**|Client  |This is the most likely attack. <br>DoS occurs when `Object` holds generic functions that are implicitly called for various operations (for example, `toString` and `valueOf`). <br> The attacker pollutes `Object.prototype.someattr` and alters its state to an unexpected value such as `Int` or `Object`. In this case, the code fails and is likely to cause a denial of service.  <br>**For example:** if an attacker pollutes `Object.prototype.toString` by defining it as an integer, if the codebase at any point was reliant on `someobject.toString()` it would fail. |\n |**Remote Code Execution**|Client|Remote code execution is generally only possible in cases where the codebase evaluates a specific attribute of an object, and then executes that evaluation.<br>**For example:** `eval(someobject.someattr)`. In this case, if the attacker pollutes `Object.prototype.someattr` they are likely to be able to leverage this in order to execute code.|\n|**Property Injection**|Client|The attacker pollutes properties that the codebase relies on for their informative value, including security properties such as cookies or tokens.<br>  **For example:** if a codebase checks privileges for `someuser.isAdmin`, then when the attacker pollutes `Object.prototype.isAdmin` and sets it to equal `true`, they can then achieve admin privileges.|\n\n## Affected environments\n\nThe following environments are susceptible to a Prototype Pollution attack:\n\n-   Application server\n    \n-   Web server\n    \n\n## How to prevent\n\n1.  Freeze the prototype— use `Object.freeze (Object.prototype)`.\n    \n2.  Require schema validation of JSON input.\n    \n3.  Avoid using unsafe recursive merge functions.\n    \n4.  Consider using objects without prototypes (for example, `Object.create(null)`), breaking the prototype chain and preventing pollution.\n    \n5.  As a best practice use `Map` instead of `Object`.\n\n### For more information on this vulnerability type:\n\n[Arteau, Oliver. “JavaScript prototype pollution attack in NodeJS application.” GitHub, 26 May 2018](https://github.com/HoLyVieR/prototype-pollution-nsec18/blob/master/paper/JavaScript_prototype_pollution_attack_in_NodeJS.pdf)\n\n## Remediation\nUpgrade `mathjs` to version 7.5.1 or higher.\n## References\n- [GitHub Additional Information](https://github.com/josdejong/mathjs/blob/develop/src/utils/object.js#L82)\n- [GitHub Commit](https://github.com/josdejong/mathjs/commit/ecb80514e80bce4e6ec7e71db8ff79954f07c57e)\n",
+      "disclosureTime": "2020-10-07T15:29:10Z",
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "7.5.1"
+      ],
+      "functions": [],
+      "functions_new": [],
+      "id": "SNYK-JS-MATHJS-1016401",
+      "identifiers": {
+        "CVE": [
+          "CVE-2020-7743"
+        ],
+        "CWE": [
+          "CWE-400"
+        ]
+      },
+      "language": "js",
+      "modificationTime": "2020-10-13T14:27:36.684312Z",
+      "moduleName": "mathjs",
+      "packageManager": "npm",
+      "packageName": "mathjs",
+      "patches": [],
+      "proprietary": true,
+      "publicationTime": "2020-10-13T14:27:36.231667Z",
+      "references": [
+        {
+          "title": "GitHub Additional Information",
+          "url": "https://github.com/josdejong/mathjs/blob/develop/src/utils/object.js%23L82"
+        },
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/josdejong/mathjs/commit/ecb80514e80bce4e6ec7e71db8ff79954f07c57e"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "<7.5.1"
+        ]
+      },
+      "severity": "high",
+      "severityWithCritical": "high",
+      "title": "Prototype Pollution",
+      "from": [
+        "dvna@0.0.1",
+        "mathjs@3.10.1"
+      ],
+      "upgradePath": [
+        false,
+        "mathjs@7.5.1"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "mathjs",
+      "version": "3.10.1"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "alternativeIds": [
+        "SNYK-JS-MATHJS-10881"
+      ],
+      "creationTime": "2018-01-28T13:00:18.453000Z",
+      "credit": [
+        "CapacitorSet",
+        "denvit"
+      ],
+      "cvssScore": 7.3,
+      "description": "## Overview\n[`mathjs`](https://www.npmjs.com/package/mathjs) is an extensive math library for JavaScript and Node.js.\n\nAffected versions of the package are vulnerable to Arbitrary Code Execution.\n\nThe expression parser in mathjs uses the `eval` and the `new Function` methods insecurely which could allow an attacker to execute arbitrary code on the remote server.\n\n## Remediation\nUpgrade `mathjs` to version 3.10.3 or higher.\n\n## References\n- [GitHub Commit](https://github.com/josdejong/mathjs/compare/v3.10.1...v3.10.3)\n- [GitHub Changelog](https://github.com/josdejong/mathjs/blob/v3.11.5/HISTORY.md#2017-03-31-version-3103)",
+      "disclosureTime": "2017-03-31T21:00:00Z",
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "3.10.3"
+      ],
+      "functions": [],
+      "functions_new": [],
+      "id": "npm:mathjs:20170331",
+      "identifiers": {
+        "ALTERNATIVE": [
+          "SNYK-JS-MATHJS-10881"
+        ],
+        "CVE": [],
+        "CWE": [
+          "CWE-94"
+        ]
+      },
+      "language": "js",
+      "modificationTime": "2019-06-02T07:09:56.746684Z",
+      "moduleName": "mathjs",
+      "packageManager": "npm",
+      "packageName": "mathjs",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2018-01-28T13:00:18.453000Z",
+      "references": [
+        {
+          "title": "GitHub Changelog",
+          "url": "https://github.com/josdejong/mathjs/blob/v3.11.5/HISTORY.md%232017-03-31-version-3103"
+        },
+        {
+          "title": "GitHub Comparison",
+          "url": "https://github.com/josdejong/mathjs/compare/v3.10.1...v3.10.3"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "<3.10.3"
+        ]
+      },
+      "severity": "high",
+      "severityWithCritical": "high",
+      "title": "Arbitrary Code Execution",
+      "from": [
+        "dvna@0.0.1",
+        "mathjs@3.10.1"
+      ],
+      "upgradePath": [
+        false,
+        "mathjs@3.10.3"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "mathjs",
+      "version": "3.10.1"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "alternativeIds": [
+        "SNYK-JS-MATHJS-10882"
+      ],
+      "creationTime": "2018-01-28T14:01:09.995000Z",
+      "credit": [
+        "Konrad Borowski",
+        "Joe Vennix",
+        "comex"
+      ],
+      "cvssScore": 5.6,
+      "description": "## Overview\n[`mathjs`](https://www.npmjs.com/package/mathjs) is an extensive math library for JavaScript and Node.js.\n\nAffected versions of the package are vulnerable to Arbitrary Code Execution.\n\nThe expression parser in mathjs uses the `eval` and the `new Function` methods insecurely which could allow an attacker to execute arbitrary code on the remote server.\n\nthis is due to an incomplete fix for [npm:mathjs:20170331](https://snyk.io/vuln/npm:mathjs:20170331).\n\n## Remediation\nUpgrade `mathjs` to version 3.11.5 or higher.\n\n## References\n- [GitHub PR #1](https://github.com/josdejong/mathjs/issues/821)\n- [GitHub PR #2](https://github.com/josdejong/mathjs/issues/822)\n- [GitHub Changelog](https://github.com/josdejong/mathjs/blob/master/HISTORY.md#2017-04-08-version-3115)\n- [GitHub Commit](https://github.com/josdejong/mathjs/compare/v3.10.3...v3.11.5)\n",
+      "disclosureTime": "2017-04-02T21:00:00Z",
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "3.11.5"
+      ],
+      "functions": [],
+      "functions_new": [],
+      "id": "npm:mathjs:20170402",
+      "identifiers": {
+        "ALTERNATIVE": [
+          "SNYK-JS-MATHJS-10882"
+        ],
+        "CVE": [],
+        "CWE": [
+          "CWE-94"
+        ]
+      },
+      "language": "js",
+      "modificationTime": "2019-06-02T07:09:57.458673Z",
+      "moduleName": "mathjs",
+      "packageManager": "npm",
+      "packageName": "mathjs",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2018-01-28T14:01:09.995000Z",
+      "references": [
+        {
+          "title": "GitHub Changelog",
+          "url": "https://github.com/josdejong/mathjs/blob/master/HISTORY.md%232017-04-08-version-3115"
+        },
+        {
+          "title": "GitHub Comparison",
+          "url": "https://github.com/josdejong/mathjs/compare/v3.10.3...v3.11.5"
+        },
+        {
+          "title": "GitHub Issue",
+          "url": "https://github.com/josdejong/mathjs/issues/821"
+        },
+        {
+          "title": "GitHub Issue",
+          "url": "https://github.com/josdejong/mathjs/issues/822"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "<3.11.5"
+        ]
+      },
+      "severity": "medium",
+      "severityWithCritical": "medium",
+      "title": "Arbitrary Code Execution",
+      "from": [
+        "dvna@0.0.1",
+        "mathjs@3.10.1"
+      ],
+      "upgradePath": [
+        false,
+        "mathjs@3.11.5"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "mathjs",
+      "version": "3.10.1"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "alternativeIds": [
+        "SNYK-JS-MATHJS-10880"
+      ],
+      "creationTime": "2018-01-28T11:12:08.713000Z",
+      "credit": [
+        "Jos De Jong"
+      ],
+      "cvssScore": 5.6,
+      "description": "## Overview\n[`mathjs`](https://www.npmjs.com/package/mathjs) is an extensive math library for JavaScript and Node.js.\n\nAffected versions of the package are vulnerable to Arbitrary Code Execution. The `isSafeMethod` was able to call other methods (like bind) which is not allowed and could cause code execution on the remote server.\n\n## Remediation\nUpgrade `mathjs` to version 3.13.3 or higher.\n\n## References\n- [GitHub Changelog](https://github.com/josdejong/mathjs/blob/master/HISTORY.md#2017-05-27-version-3133)\n- [GitHub Commit](https://github.com/josdejong/mathjs/commit/ed5f2cebaf873ba1e57acbce2a3668686ac69331)\n",
+      "disclosureTime": "2017-05-27T21:00:00Z",
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "3.13.3"
+      ],
+      "functions": [],
+      "functions_new": [],
+      "id": "npm:mathjs:20170527",
+      "identifiers": {
+        "ALTERNATIVE": [
+          "SNYK-JS-MATHJS-10880"
+        ],
+        "CVE": [],
+        "CWE": [
+          "CWE-94"
+        ]
+      },
+      "language": "js",
+      "modificationTime": "2019-06-02T07:09:56.028578Z",
+      "moduleName": "mathjs",
+      "packageManager": "npm",
+      "packageName": "mathjs",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2018-01-28T11:12:08.713000Z",
+      "references": [
+        {
+          "title": "GitHub Changelog",
+          "url": "https://github.com/josdejong/mathjs/blob/master/HISTORY.md%232017-05-27-version-3133"
+        },
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/josdejong/mathjs/commit/ed5f2cebaf873ba1e57acbce2a3668686ac69331"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "<3.13.3"
+        ]
+      },
+      "severity": "medium",
+      "severityWithCritical": "medium",
+      "title": "Arbitrary Code Execution",
+      "from": [
+        "dvna@0.0.1",
+        "mathjs@3.10.1"
+      ],
+      "upgradePath": [
+        false,
+        "mathjs@3.13.3"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "mathjs",
+      "version": "3.10.1"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "alternativeIds": [
+        "SNYK-JS-MATHJS-10843"
+      ],
+      "creationTime": "2017-11-28T12:38:08.861000Z",
+      "credit": [
+        "Masato Kinugawa"
+      ],
+      "cvssScore": 7.3,
+      "description": "## Overview\n[`mathjs`](https://www.npmjs.com/package/mathjs) is an extensive math library for JavaScript and Node.js\n\nAffected versions of the package are vulnerable to Arbitrary Code Execution via `typed-function`.  A malicious user could possibly execute arbitrary code in the JavaScript engine, by creating a typed function with JavaScript code in the name.\n\n## Remediation\nUpgrade `mathjs` to version 3.17.0 or higher.\n\n## References\n- [GitHub Changelog](https://github.com/josdejong/mathjs/blob/master/HISTORY.md#2017-11-18-version-3170)\n- [GitHub Commit](https://github.com/josdejong/mathjs/commit/8d2d48d81b3c233fb64eb2ec1d7a9e1cf6a55a90)\n",
+      "disclosureTime": "2017-11-18T22:00:00Z",
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "3.17.0"
+      ],
+      "functions": [],
+      "functions_new": [],
+      "id": "npm:mathjs:20171118",
+      "identifiers": {
+        "ALTERNATIVE": [
+          "SNYK-JS-MATHJS-10843"
+        ],
+        "CVE": [
+          "CVE-2017-1001002"
+        ],
+        "CWE": [
+          "CWE-94"
+        ],
+        "NSP": [
+          552
+        ]
+      },
+      "language": "js",
+      "modificationTime": "2019-05-30T14:51:40.369099Z",
+      "moduleName": "mathjs",
+      "packageManager": "npm",
+      "packageName": "mathjs",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2017-11-28T14:47:22.368000Z",
+      "references": [
+        {
+          "title": "GitHub Changelog",
+          "url": "https://github.com/josdejong/mathjs/blob/master/HISTORY.md%232017-11-18-version-3170"
+        },
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/josdejong/mathjs/commit/8d2d48d81b3c233fb64eb2ec1d7a9e1cf6a55a90"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "<3.17.0"
+        ]
+      },
+      "severity": "high",
+      "severityWithCritical": "high",
+      "title": "Arbitrary Code Execution",
+      "from": [
+        "dvna@0.0.1",
+        "mathjs@3.10.1"
+      ],
+      "upgradePath": [
+        false,
+        "mathjs@3.17.0"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "mathjs",
+      "version": "3.10.1"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "alternativeIds": [
+        "SNYK-JS-MATHJS-10844"
+      ],
+      "creationTime": "2017-11-28T12:38:08.861000Z",
+      "credit": [
+        "Masato Kinugawa"
+      ],
+      "cvssScore": 9.8,
+      "description": "## Overview\n[`mathjs`](https://www.npmjs.com/package/mathjs) is an extensive math library for JavaScript and Node.js\n\nAffected versions of the package are vulnerable to Arbitrary Code Execution. Forbidden properties like constructor could be replaced by using unicode characters when creating an object.\n\n## Remediation\nUpgrade `mathjs` to version 3.17.0 or higher.\n\n## References\n- [GitHub Changelog](https://github.com/josdejong/mathjs/blob/master/HISTORY.md#2017-11-18-version-3170)\n- [GitHub Commit](https://github.com/josdejong/mathjs/commit/a60f3c8d9dd714244aed7a5569c3dccaa3a4e761)\n",
+      "disclosureTime": "2017-11-18T22:00:00Z",
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "3.17.0"
+      ],
+      "functions": [],
+      "functions_new": [],
+      "id": "npm:mathjs:20171118-1",
+      "identifiers": {
+        "ALTERNATIVE": [
+          "SNYK-JS-MATHJS-10844"
+        ],
+        "CVE": [
+          "CVE-2017-1001003"
+        ],
+        "CWE": [
+          "CWE-94"
+        ],
+        "NSP": [
+          551
+        ]
+      },
+      "language": "js",
+      "modificationTime": "2019-06-02T07:09:42.422875Z",
+      "moduleName": "mathjs",
+      "packageManager": "npm",
+      "packageName": "mathjs",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2017-11-28T14:47:22.264000Z",
+      "references": [
+        {
+          "title": "GitHub Changelog",
+          "url": "https://github.com/josdejong/mathjs/blob/master/HISTORY.md%232017-11-18-version-3170"
+        },
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/josdejong/mathjs/commit/a60f3c8d9dd714244aed7a5569c3dccaa3a4e761"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "<3.17.0"
+        ]
+      },
+      "severity": "high",
+      "severityWithCritical": "critical",
+      "title": "Arbitrary Code Execution",
+      "from": [
+        "dvna@0.0.1",
+        "mathjs@3.10.1"
+      ],
+      "upgradePath": [
+        false,
+        "mathjs@3.17.0"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "mathjs",
+      "version": "3.10.1"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "alternativeIds": [],
+      "creationTime": "2019-04-08T17:32:17.848023Z",
+      "credit": [
+        "Masato Kinugawa"
+      ],
+      "cvssScore": 8.8,
+      "description": "## Overview\n[typed-function](https://github.com/josdejong/typed-function) is a library used for type checking of JavaScript functions.\n\nAffected versions of this package are vulnerable to Arbitrary Code Execution due to the creation of a typed function with JavaScript code in the `_name` variable.\n## Remediation\nUpgrade `typed-function` to version 0.10.6 or higher.\n## References\n- [GitHub Commit](https://github.com/josdejong/typed-function/commit/6478ef4f2c3f3c2d9f2c820e2db4b4ba3425e6fe)\n- [NPM Security Advisory](https://www.npmjs.com/advisories/819)\n",
+      "disclosureTime": "2017-11-27T16:13:51Z",
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "0.10.6"
+      ],
+      "functions": [
+        {
+          "functionId": {
+            "className": null,
+            "filePath": "typed-function.js",
+            "functionName": "typed"
+          },
+          "version": [
+            "0.3.1"
+          ]
+        },
+        {
+          "functionId": {
+            "className": null,
+            "filePath": "typed-function.js",
+            "functionName": "create._typed"
+          },
+          "version": [
+            "<0.10.6"
+          ]
+        },
+        {
+          "functionId": {
+            "className": null,
+            "filePath": "typed-function.js",
+            "functionName": "_typed"
+          },
+          "version": [
+            "<0.7.0"
+          ]
+        }
+      ],
+      "functions_new": [
+        {
+          "functionId": {
+            "filePath": "typed-function.js",
+            "functionName": "typed"
+          },
+          "version": [
+            "0.3.1"
+          ]
+        },
+        {
+          "functionId": {
+            "filePath": "typed-function.js",
+            "functionName": "create._typed"
+          },
+          "version": [
+            "<0.10.6"
+          ]
+        },
+        {
+          "functionId": {
+            "filePath": "typed-function.js",
+            "functionName": "_typed"
+          },
+          "version": [
+            "<0.7.0"
+          ]
+        }
+      ],
+      "id": "SNYK-JS-TYPEDFUNCTION-174139",
+      "identifiers": {
+        "CVE": [
+          "CVE-2017-1001004"
+        ],
+        "CWE": [
+          "CWE-94"
+        ],
+        "NSP": [
+          819
+        ]
+      },
+      "language": "js",
+      "modificationTime": "2020-06-12T14:36:56.191234Z",
+      "moduleName": "typed-function",
+      "packageManager": "npm",
+      "packageName": "typed-function",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2019-04-08T17:26:57Z",
+      "references": [
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/josdejong/typed-function/commit/6478ef4f2c3f3c2d9f2c820e2db4b4ba3425e6fe"
+        },
+        {
+          "title": "NPM Security Advisory",
+          "url": "https://www.npmjs.com/advisories/819"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "<0.10.6"
+        ]
+      },
+      "severity": "high",
+      "severityWithCritical": "high",
+      "title": "Arbitrary Code Execution",
+      "from": [
+        "dvna@0.0.1",
+        "mathjs@3.10.1",
+        "typed-function@0.10.5"
+      ],
+      "upgradePath": [
+        false,
+        "mathjs@3.17.0",
+        "typed-function@0.10.6"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "typed-function",
+      "version": "0.10.5"
+    },
+    {
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:H/RL:U/RC:C",
+      "alternativeIds": [
+        "SNYK-JS-NODESERIALIZE-10400"
+      ],
+      "creationTime": "2017-02-12T16:38:36Z",
+      "credit": [
+        "Ajin Abraham"
+      ],
+      "cvssScore": 9.8,
+      "description": "## Overview\r\n[`node-serialize`](https://www.npmjs.com/package/node-serialize) serializes an object and it's function into a JSON.\r\n\r\nAffected versions of this package are vulnerable to Arbitrary Code Execution when untrusted user-input is passed into the `unserialize()` function.\r\n\r\n**Example:**\r\n```js\r\nvar serialize = require('node-serialize');\r\nvar payload = '{\"rce\":\"_$$ND_FUNC$$_function (){require(\\'child_process\\').exec(\\'ls /\\', function(error, stdout, stderr) { console.log(stdout) });}()\"}';\r\nserialize.unserialize(payload);\r\n```\r\n\r\n## Remediation\r\nThere is no fix version for `node-serialize`\r\n\r\n## References\r\n- [Opsecx Blog](https://opsecx.com/index.php/2017/02/08/exploiting-node-js-deserialization-bug-for-remote-code-execution/)\r\n- [GitHub Issue](https://github.com/luin/serialize/issues/4)",
+      "disclosureTime": "2017-02-08T16:38:36Z",
+      "exploit": "High",
+      "fixedIn": [],
+      "functions": [],
+      "functions_new": [],
+      "id": "npm:node-serialize:20170208",
+      "identifiers": {
+        "ALTERNATIVE": [
+          "SNYK-JS-NODESERIALIZE-10400"
+        ],
+        "CVE": [
+          "CVE-2017-5941"
+        ],
+        "CWE": [
+          "CWE-502"
+        ],
+        "NSP": [
+          311
+        ]
+      },
+      "language": "js",
+      "modificationTime": "2018-11-18T11:50:40.856566Z",
+      "moduleName": "node-serialize",
+      "packageManager": "npm",
+      "packageName": "node-serialize",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2017-02-13T16:38:36Z",
+      "references": [
+        {
+          "title": "GitHub Issue",
+          "url": "https://github.com/luin/serialize/issues/4"
+        },
+        {
+          "title": "Opsecx Blog",
+          "url": "https://opsecx.com/index.php/2017/02/08/exploiting-node-js-deserialization-bug-for-remote-code-execution/"
+        },
+        {
+          "title": "PoC",
+          "url": "https://github.com/p1gz/CVE-2017-5941-NodeJS-RCE"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "severity": "high",
+      "severityWithCritical": "critical",
+      "title": "Arbitrary Code Execution",
+      "from": [
+        "dvna@0.0.1",
+        "node-serialize@0.0.4"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "node-serialize",
+      "version": "0.0.4"
+    }
+  ],
+  "ok": false,
+  "dependencyCount": 269,
+  "org": "nxious",
+  "policy": "# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.\nversion: v1.19.0\nignore: {}\npatch: {}\n",
+  "isPrivate": true,
+  "licensesPolicy": {
+    "severities": {},
+    "orgLicenseRules": {
+      "AGPL-1.0": {
+        "licenseType": "AGPL-1.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "AGPL-3.0": {
+        "licenseType": "AGPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "Artistic-1.0": {
+        "licenseType": "Artistic-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "Artistic-2.0": {
+        "licenseType": "Artistic-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CDDL-1.0": {
+        "licenseType": "CDDL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CPOL-1.02": {
+        "licenseType": "CPOL-1.02",
+        "severity": "high",
+        "instructions": ""
+      },
+      "EPL-1.0": {
+        "licenseType": "EPL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "GPL-2.0": {
+        "licenseType": "GPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "GPL-3.0": {
+        "licenseType": "GPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "LGPL-2.0": {
+        "licenseType": "LGPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-2.1": {
+        "licenseType": "LGPL-2.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-3.0": {
+        "licenseType": "LGPL-3.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-1.1": {
+        "licenseType": "MPL-1.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-2.0": {
+        "licenseType": "MPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MS-RL": {
+        "licenseType": "MS-RL",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "SimPL-2.0": {
+        "licenseType": "SimPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      }
+    }
+  },
+  "packageManager": "npm",
+  "projectId": "63ecf3f9-5f39-42c5-89a3-3512f950803f",
+  "ignoreSettings": null,
+  "summary": "12 vulnerable dependency paths",
+  "remediation": {
+    "unresolved": [
+      {
+        "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:H/RL:U/RC:C",
+        "alternativeIds": [
+          "SNYK-JS-NODESERIALIZE-10400"
+        ],
+        "creationTime": "2017-02-12T16:38:36Z",
+        "credit": [
+          "Ajin Abraham"
+        ],
+        "cvssScore": 9.8,
+        "description": "## Overview\r\n[`node-serialize`](https://www.npmjs.com/package/node-serialize) serializes an object and it's function into a JSON.\r\n\r\nAffected versions of this package are vulnerable to Arbitrary Code Execution when untrusted user-input is passed into the `unserialize()` function.\r\n\r\n**Example:**\r\n```js\r\nvar serialize = require('node-serialize');\r\nvar payload = '{\"rce\":\"_$$ND_FUNC$$_function (){require(\\'child_process\\').exec(\\'ls /\\', function(error, stdout, stderr) { console.log(stdout) });}()\"}';\r\nserialize.unserialize(payload);\r\n```\r\n\r\n## Remediation\r\nThere is no fix version for `node-serialize`\r\n\r\n## References\r\n- [Opsecx Blog](https://opsecx.com/index.php/2017/02/08/exploiting-node-js-deserialization-bug-for-remote-code-execution/)\r\n- [GitHub Issue](https://github.com/luin/serialize/issues/4)",
+        "disclosureTime": "2017-02-08T16:38:36Z",
+        "exploit": "High",
+        "fixedIn": [],
+        "functions": [],
+        "functions_new": [],
+        "id": "npm:node-serialize:20170208",
+        "identifiers": {
+          "ALTERNATIVE": [
+            "SNYK-JS-NODESERIALIZE-10400"
+          ],
+          "CVE": [
+            "CVE-2017-5941"
+          ],
+          "CWE": [
+            "CWE-502"
+          ],
+          "NSP": [
+            311
+          ]
+        },
+        "language": "js",
+        "modificationTime": "2018-11-18T11:50:40.856566Z",
+        "moduleName": "node-serialize",
+        "packageManager": "npm",
+        "packageName": "node-serialize",
+        "patches": [],
+        "proprietary": false,
+        "publicationTime": "2017-02-13T16:38:36Z",
+        "references": [
+          {
+            "title": "GitHub Issue",
+            "url": "https://github.com/luin/serialize/issues/4"
+          },
+          {
+            "title": "Opsecx Blog",
+            "url": "https://opsecx.com/index.php/2017/02/08/exploiting-node-js-deserialization-bug-for-remote-code-execution/"
+          },
+          {
+            "title": "PoC",
+            "url": "https://github.com/p1gz/CVE-2017-5941-NodeJS-RCE"
+          }
+        ],
+        "semver": {
+          "vulnerable": [
+            "*"
+          ]
+        },
+        "severity": "high",
+        "severityWithCritical": "critical",
+        "title": "Arbitrary Code Execution",
+        "from": [
+          "dvna@0.0.1",
+          "node-serialize@0.0.4"
+        ],
+        "upgradePath": [],
+        "isUpgradable": false,
+        "isPatchable": false,
+        "isPinnable": false,
+        "name": "node-serialize",
+        "version": "0.0.4"
+      }
+    ],
+    "upgrade": {
+      "bcrypt@1.0.3": {
+        "upgradeTo": "bcrypt@5.0.0",
+        "upgrades": [
+          "bcrypt@1.0.3",
+          "bcrypt@1.0.3"
+        ],
+        "vulns": [
+          "SNYK-JS-BCRYPT-572911",
+          "SNYK-JS-BCRYPT-575033"
+        ]
+      },
+      "express-fileupload@0.4.0": {
+        "upgradeTo": "express-fileupload@1.1.10",
+        "upgrades": [
+          "express-fileupload@0.4.0",
+          "express-fileupload@0.4.0"
+        ],
+        "vulns": [
+          "SNYK-JS-EXPRESSFILEUPLOAD-595969",
+          "SNYK-JS-EXPRESSFILEUPLOAD-473997"
+        ]
+      },
+      "mathjs@3.10.1": {
+        "upgradeTo": "mathjs@7.5.1",
+        "upgrades": [
+          "mathjs@3.10.1",
+          "mathjs@3.10.1",
+          "mathjs@3.10.1",
+          "typed-function@0.10.5",
+          "mathjs@3.10.1",
+          "mathjs@3.10.1",
+          "mathjs@3.10.1"
+        ],
+        "vulns": [
+          "SNYK-JS-MATHJS-1016401",
+          "npm:mathjs:20171118",
+          "npm:mathjs:20171118-1",
+          "SNYK-JS-TYPEDFUNCTION-174139",
+          "npm:mathjs:20170527",
+          "npm:mathjs:20170402",
+          "npm:mathjs:20170331"
+        ]
+      }
+    },
+    "patch": {},
+    "ignore": {},
+    "pin": {}
+  },
+  "filesystemPolicy": false,
+  "filtered": {
+    "ignore": [],
+    "patch": []
+  },
+  "uniqueCount": 12,
+  "projectName": "dvna",
+  "foundProjectCount": 1,
+  "displayTargetFile": "package-lock.json",
+  "path": "/var/lib/jenkins/workspace/DVNA"
+}

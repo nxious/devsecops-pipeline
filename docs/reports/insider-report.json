@@ -1,0 +1,126 @@
+{
+ "dra": [
+  {
+   "dra": "https://github.com/",
+   "type": "url",
+   "file": "/var/lib/jenkins/workspace/DVNA/public/assets/showdown.min.js"
+  }
+ ],
+ "sca": [
+  {
+   "cwe": "CWE-502",
+   "cves": "CVE-2017-5941",
+   "sast": "",
+   "title": "Code Execution through IIFE - node-serialize",
+   "severity": "critical",
+   "advisoryId": 311,
+   "description": "Affected versions of `node-serialize` can be abused to execute arbitrary code via an [immediately invoked function expression](https://en.wikipedia.org/wiki/Immediately-invoked_function_expression) (IIFE) if untrusted user input is passed into `unserialize()`.",
+   "recomendation": "There is no direct patch for this issue. The package author has reviewed this advisory, and provided the following recommendation:\r\n\r\n```\r\nTo avoid the security issues, at least one of the following methods should be taken:\r\n\r\n1. Make sure to send serialized strings internally, isolating them from potential hackers. For example, only sending the strings from backend to fronend and always using HTTPS instead of HTTP.\r\n\r\n2. Introduce public-key cryptosystems (e.g. RSA) to ensure the strings not being tampered with.\r\n```"
+  },
+  {
+   "cwe": "CWE-94",
+   "cves": "CVE-2017-1001003",
+   "sast": "",
+   "title": "Arbitrary Code Execution - mathjs",
+   "severity": "critical",
+   "advisoryId": 551,
+   "description": "math.js before 3.17.0 had an issue where private properties such as a constructor could be replaced by using unicode characters when creating an object.",
+   "recomendation": "Upgrade to version 3.17.0 or later."
+  },
+  {
+   "cwe": "CWE-94",
+   "cves": "CVE-2017-1001002",
+   "sast": "",
+   "title": "Arbitrary Code Execution - mathjs",
+   "severity": "critical",
+   "advisoryId": 552,
+   "description": "math.js before 3.17.0 had an arbitrary code execution in the JavaScript engine. Creating a typed function with JavaScript code in the name could result arbitrary execution.",
+   "recomendation": "Update to version 3.17.0 or later."
+  }
+ ],
+ "sast": {
+  "name": "dvna",
+  "version": "0.0.1",
+  "securityScore": 100,
+  "size": "86160562 Bytes",
+  "numberOfLines": 3470
+ },
+ "libraries": [
+  {
+   "name": "express-fileupload",
+   "current": "^0.4.0"
+  },
+  {
+   "name": "express-flash",
+   "current": "0.0.2"
+  },
+  {
+   "name": "express-session",
+   "current": "^1.15.6"
+  },
+  {
+   "name": "morgan",
+   "current": "^1.9.0"
+  },
+  {
+   "name": "mysql2",
+   "current": "^1.4.2"
+  },
+  {
+   "name": "bcrypt",
+   "current": "^1.0.3"
+  },
+  {
+   "name": "ejs",
+   "current": "^2.5.7"
+  },
+  {
+   "name": "flash",
+   "current": "^1.1.0"
+  },
+  {
+   "name": "node-serialize",
+   "current": "0.0.4"
+  },
+  {
+   "name": "sequelize",
+   "current": "^4.13.10"
+  },
+  {
+   "name": "express",
+   "current": "^4.16.2"
+  },
+  {
+   "name": "mathjs",
+   "current": "3.10.1"
+  },
+  {
+   "name": "md5",
+   "current": "^2.2.1"
+  },
+  {
+   "name": "passport",
+   "current": "^0.4.0"
+  },
+  {
+   "name": "passport-local",
+   "current": "^1.0.0"
+  },
+  {
+   "name": "csurf",
+   "current": "^1.9.0"
+  },
+  {
+   "name": "libxmljs",
+   "current": "^0.19.1"
+  },
+  {
+   "name": "winston",
+   "current": "^3.0.0"
+  },
+  {
+   "name": "x-xss-protection",
+   "current": "^1.1.0"
+  }
+ ]
+}

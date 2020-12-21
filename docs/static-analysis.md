@@ -16,7 +16,7 @@ Each tool used was added as a new stage in the `jenkinsfile`.
 
 ### [njsscan](https://github.com/ajinabraham/njsscan){target="_blank"}
 
-`njsscan` is a SAST tool designed specifically for node.js applications. It implements pattern matching and syntax-aware semantic code pattern search in order to perform the complete analysis of source code for any vulnerabilities.
+`njsscan` is a SAST tool designed specifically for node.js applications. It implements pattern matching and syntax-aware semantic code pattern search to perform the complete analysis of source code for any vulnerabilities.
 
 #### Installation
 

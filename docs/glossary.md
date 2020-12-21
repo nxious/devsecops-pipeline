@@ -8,3 +8,4 @@ This page contains uncommon terms used in this report along with their intended 
 |VM     |Virtual Machine                    |An emulation of a computer system within a host system.                                     |
 |LTS    |Long Terms Support                 |A lifecycle management policy in which a stable release is maintained for a longer duration.|
 |PWD    |Present Working Directory          |The present working directory is the directory in which the user is currently working in.   |
+|Spider |                                   |A spider is a software program that indexes the content of a website.                       |               

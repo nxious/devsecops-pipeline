@@ -1,19 +1,20 @@
 site_name: Pipelining with DevSecOps
 site_description: Documentation for Managing a DevSecOps Pipeline with Secure Development and Operations
 site_author: Rahul
-site_url: https://devsecops.nxio.us
+site_url: https://devsecops.nxio.us/
 
 nav:
 - Introduction: 'index.md'
 - Contents: 'contents.md'
-- Problem Statement: 'problem-statement.md'
+- Problem statement: 'problem-statement.md'
 - Glossary: 'glossary.md'
 - Deploying the report: 'deploying-the-report.md'
 - Setting up VMs: 'setting-up-vms.md'
-- Pipeline Setup: 'pipeline-setup.md'
+- Pipeline setup: 'pipeline-setup.md'
 - Software Composition Analysis: 'software-composition-analysis.md'
-- Static Analysis (SAST): 'static-analysis.md'
-- SAST Tools comparison: 'sast-tools-comparison.md'
+- Static analysis (SAST): 'static-analysis.md'
+- SAST tools comparison: 'sast-tools-comparison.md'
+- Dynamic analysis (DAST): 'dynamic-analysis.md'
 - Resources and references: 'resources-and-references.md'
 
 theme: 

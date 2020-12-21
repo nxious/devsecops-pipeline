@@ -78,4 +78,4 @@ Proxying the record through Cloudflare provides additional features such as a CD
 
 ![Cloudflare Settings](images/Cloudflare.png)
 
-This documentation can be accessed at the following URLs : [`https://devsecops.nxio.us`](https://devsecops.nxio.us)  or ['devsecops-pipelines.netlify.app'](devsecops-pipelines.netlify.app)
+This documentation can be accessed at the following URLs : [`https://devsecops.nxio.us`](https://devsecops.nxio.us)  or [`https://devsecops-pipelines.netlify.app`](https://devsecops-pipelines.netlify.app)

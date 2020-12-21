@@ -1,0 +1,1686 @@
+[
+  {
+    "coordinates": "pkg:npm/bcrypt@1.0.3",
+    "description": "A bcrypt library for NodeJS.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/bcrypt@1.0.3?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/nan@2.6.2",
+    "description": "Native Abstractions for Node.js: C++ header for Node 0.8 -> 14 compatibility",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/nan@2.6.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/node-pre-gyp@0.6.36",
+    "description": "Node.js native addon binary install tool",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/node-pre-gyp@0.6.36?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/mkdirp@0.5.5",
+    "description": "Recursively mkdir, like `mkdir -p`",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/mkdirp@0.5.5?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/minimist@1.2.5",
+    "description": "parse argument options",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/minimist@1.2.5?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/nopt@4.0.3",
+    "description": "Option parsing for Node, supporting types, shorthands, etc. Used by npm.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/nopt@4.0.3?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/abbrev@1.1.1",
+    "description": "Like ruby's abbrev module, but in js",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/abbrev@1.1.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/osenv@0.1.5",
+    "description": "Look up environment settings specific to different operating systems",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/osenv@0.1.5?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/os-homedir@1.0.2",
+    "description": "Node.js 4 `os.homedir()` ponyfill",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/os-homedir@1.0.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/os-tmpdir@1.0.2",
+    "description": "Node.js os.tmpdir() ponyfill",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/os-tmpdir@1.0.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/npmlog@4.1.2",
+    "description": "logger for npm",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/npmlog@4.1.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/are-we-there-yet@1.1.5",
+    "description": "Keep track of the overall completion of many disparate processes",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/are-we-there-yet@1.1.5?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/delegates@1.0.0",
+    "description": "delegate methods and accessors to another property",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/delegates@1.0.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/readable-stream@2.3.7",
+    "description": "Streams3, a user-land copy of the stream library from Node.js",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/readable-stream@2.3.7?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/core-util-is@1.0.2",
+    "description": "The `util.is*` functions introduced in Node v0.12.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/core-util-is@1.0.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/inherits@2.0.4",
+    "description": "Browser-friendly inheritance fully compatible with standard node.js inherits()",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/inherits@2.0.4?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/isarray@1.0.0",
+    "description": "Array#isArray for older browsers",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/isarray@1.0.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/process-nextick-args@2.0.1",
+    "description": "process.nextTick but always with args",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/process-nextick-args@2.0.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/safe-buffer@5.1.2",
+    "description": "Safer Node.js Buffer API",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/safe-buffer@5.1.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/string_decoder@1.1.1",
+    "description": "The string_decoder module from Node core",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/string_decoder@1.1.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/util-deprecate@1.0.2",
+    "description": "The Node.js `util.deprecate()` function with browser support",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/util-deprecate@1.0.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/console-control-strings@1.1.0",
+    "description": "A library of cross-platform tested terminal/console command strings for doing things like color and cursor positioning.  This is a subset of both ansi and vt100.  All control codes included work on both Windows & Unix-like OSes, except where noted.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/console-control-strings@1.1.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/gauge@2.7.4",
+    "description": "A terminal based horizontal guage",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/gauge@2.7.4?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/aproba@1.2.0",
+    "description": "A ridiculously light-weight argument validator (now browser friendly)",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/aproba@1.2.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/has-unicode@2.0.1",
+    "description": "Try to guess if your terminal supports unicode",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/has-unicode@2.0.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/object-assign@4.1.1",
+    "description": "ES2015 `Object.assign()` ponyfill",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/object-assign@4.1.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/signal-exit@3.0.3",
+    "description": "when you want to fire an event no matter how a process exits.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/signal-exit@3.0.3?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/string-width@1.0.2",
+    "description": "Get the visual width of a string - the number of columns required to display it",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/string-width@1.0.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/code-point-at@1.1.0",
+    "description": "ES2015 `String#codePointAt()` ponyfill",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/code-point-at@1.1.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/is-fullwidth-code-point@1.0.0",
+    "description": "Check if the character represented by a given Unicode code point is fullwidth",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/is-fullwidth-code-point@1.0.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/number-is-nan@1.0.1",
+    "description": "ES2015 `Number.isNaN()` ponyfill",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/number-is-nan@1.0.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/strip-ansi@3.0.1",
+    "description": "Strip ANSI escape codes from a string",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/strip-ansi@3.0.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/ansi-regex@2.1.1",
+    "description": "Regular expression for matching ANSI escape codes",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/ansi-regex@2.1.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/wide-align@1.1.3",
+    "description": "A wide-character aware text alignment function for use on the console or with fixed width fonts.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/wide-align@1.1.3?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/set-blocking@2.0.0",
+    "description": "set blocking stdio and stderr ensuring that terminal output does not truncate",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/set-blocking@2.0.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/rc@1.2.8",
+    "description": "hardwired configuration loader",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/rc@1.2.8?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/deep-extend@0.6.0",
+    "description": "Recursive object extending",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/deep-extend@0.6.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/ini@1.3.8",
+    "description": "An ini encoder/decoder for node",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/ini@1.3.8?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/strip-json-comments@2.0.1",
+    "description": "Strip comments from JSON. Lets you use comments in your JSON files!",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/strip-json-comments@2.0.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/request@2.88.2",
+    "description": "Simplified HTTP request client.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/request@2.88.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/aws-sign2@0.7.0",
+    "description": "AWS signing. Originally pulled from LearnBoost/knox, maintained as vendor in request, now a standalone module.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/aws-sign2@0.7.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/aws4@1.11.0",
+    "description": "Signs and prepares requests using AWS Signature Version 4",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/aws4@1.11.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/caseless@0.12.0",
+    "description": "Caseless object set/get/has, very useful when working with HTTP headers.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/caseless@0.12.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/combined-stream@1.0.8",
+    "description": "A stream that emits multiple other streams one after another.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/combined-stream@1.0.8?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/delayed-stream@1.0.0",
+    "description": "Buffers events from a stream until you are ready to handle them.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/delayed-stream@1.0.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/extend@3.0.2",
+    "description": "Port of jQuery.extend for node.js and the browser",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/extend@3.0.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/forever-agent@0.6.1",
+    "description": "HTTP Agent that keeps socket connections alive between keep-alive requests. Formerly part of mikeal/request, now a standalone module.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/forever-agent@0.6.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/form-data@2.3.3",
+    "description": "A library to create readable \"multipart/form-data\" streams. Can be used to submit forms and file uploads to other web applications.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/form-data@2.3.3?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/asynckit@0.4.0",
+    "description": "Minimal async jobs utility library, with streams support",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/asynckit@0.4.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/mime-types@2.1.27",
+    "description": "The ultimate javascript content-type utility.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/mime-types@2.1.27?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/mime-db@1.44.0",
+    "description": "Media Type Database",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/mime-db@1.44.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/har-validator@5.1.5",
+    "description": "Extremely fast HTTP Archive (HAR) validator using JSON Schema",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/har-validator@5.1.5?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/ajv@6.12.6",
+    "description": "Another JSON Schema Validator",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/ajv@6.12.6?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/fast-deep-equal@3.1.3",
+    "description": "Fast deep equal",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/fast-deep-equal@3.1.3?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/fast-json-stable-stringify@2.1.0",
+    "description": "deterministic `JSON.stringify()` - a faster version of substack's json-stable-strigify without jsonify",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/fast-json-stable-stringify@2.1.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/json-schema-traverse@0.4.1",
+    "description": "Traverse JSON Schema passing each schema object to callback",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/json-schema-traverse@0.4.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/uri-js@4.4.0",
+    "description": "An RFC 3986/3987 compliant, scheme extendable URI/IRI parsing/validating/resolving library for JavaScript.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/uri-js@4.4.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/punycode@2.1.1",
+    "description": "A robust Punycode converter that fully complies to RFC 3492 and RFC 5891, and works on nearly all JavaScript platforms.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/punycode@2.1.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/har-schema@2.0.0",
+    "description": "JSON Schema for HTTP Archive (HAR)",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/har-schema@2.0.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/http-signature@1.2.0",
+    "description": "Reference implementation of Joyent's HTTP Signature scheme.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/http-signature@1.2.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/assert-plus@1.0.0",
+    "description": "Extra assertions on top of node's assert module",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/assert-plus@1.0.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/jsprim@1.4.1",
+    "description": "utilities for primitive JavaScript types",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/jsprim@1.4.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/extsprintf@1.3.0",
+    "description": "extended POSIX-style sprintf",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/extsprintf@1.3.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/json-schema@0.2.3",
+    "description": "JSON Schema validation and specifications",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/json-schema@0.2.3?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/verror@1.10.0",
+    "description": "richer JavaScript errors",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/verror@1.10.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/sshpk@1.16.1",
+    "description": "A library for finding and using SSH public keys",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/sshpk@1.16.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/asn1@0.2.4",
+    "description": "Contains parsers and serializers for ASN.1 (currently BER only)",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/asn1@0.2.4?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/safer-buffer@2.1.2",
+    "description": "Modern Buffer API polyfill without footguns",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/safer-buffer@2.1.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/bcrypt-pbkdf@1.0.2",
+    "description": "Port of the OpenBSD bcrypt_pbkdf function to pure JS",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/bcrypt-pbkdf@1.0.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/tweetnacl@0.14.5",
+    "description": "Port of TweetNaCl cryptographic library to JavaScript",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/tweetnacl@0.14.5?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/dashdash@1.14.1",
+    "description": "A light, featureful and explicit option parsing library.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/dashdash@1.14.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/ecc-jsbn@0.1.2",
+    "description": "ECC JS code based on JSBN",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/ecc-jsbn@0.1.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/jsbn@0.1.1",
+    "description": "The jsbn library is a fast, portable implementation of large-number math in pure JavaScript, enabling public-key crypto and other applications on desktop and mobile browsers.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/jsbn@0.1.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/getpass@0.1.7",
+    "description": "getpass for node.js",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/getpass@0.1.7?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/is-typedarray@1.0.0",
+    "description": "Detect whether or not an object is a Typed Array",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/is-typedarray@1.0.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/isstream@0.1.2",
+    "description": "Determine if an object is a Stream",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/isstream@0.1.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/json-stringify-safe@5.0.1",
+    "description": "Like JSON.stringify, but doesn't blow up on circular refs.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/json-stringify-safe@5.0.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/oauth-sign@0.9.0",
+    "description": "OAuth 1 signing. Formerly a vendor lib in mikeal/request, now a standalone module.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/oauth-sign@0.9.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/performance-now@2.1.0",
+    "description": "Implements performance.now (based on process.hrtime).",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/performance-now@2.1.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/qs@6.5.2",
+    "description": "A querystring parser that supports nesting and arrays, with a depth limit",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/qs@6.5.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/tough-cookie@2.5.0",
+    "description": "RFC6265 Cookies and Cookie Jar for node.js",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/tough-cookie@2.5.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/psl@1.8.0",
+    "description": "Domain name parser based on the Public Suffix List",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/psl@1.8.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/tunnel-agent@0.6.0",
+    "description": "HTTP proxy tunneling agent. Formerly part of mikeal/request, now a standalone module.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/tunnel-agent@0.6.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/uuid@3.4.0",
+    "description": "RFC4122 (v1, v4, and v5) UUIDs",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/uuid@3.4.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/rimraf@2.7.1",
+    "description": "A deep deletion module for node (like `rm -rf`)",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/rimraf@2.7.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/glob@7.1.6",
+    "description": "a little globber",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/glob@7.1.6?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/fs.realpath@1.0.0",
+    "description": "Use node's fs.realpath, but fall back to the JS implementation if the native one fails",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/fs.realpath@1.0.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/inflight@1.0.6",
+    "description": "Add callbacks to requests in flight to avoid async duplication",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/inflight@1.0.6?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/once@1.4.0",
+    "description": "Run a function exactly one time",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/once@1.4.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/wrappy@1.0.2",
+    "description": "Callback wrapping utility",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/wrappy@1.0.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/minimatch@3.0.4",
+    "description": "a glob matcher in javascript",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/minimatch@3.0.4?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/brace-expansion@1.1.11",
+    "description": "Brace expansion as known from sh/bash",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/brace-expansion@1.1.11?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/balanced-match@1.0.0",
+    "description": "Match balanced character pairs, like \"{\" and \"}\"",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/balanced-match@1.0.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/concat-map@0.0.1",
+    "description": "concatenative mapdashery",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/concat-map@0.0.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/path-is-absolute@1.0.1",
+    "description": "Node.js 0.12 path.isAbsolute() ponyfill",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/path-is-absolute@1.0.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/semver@5.7.1",
+    "description": "The semantic version parser used by npm.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/semver@5.7.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/tar@2.2.2",
+    "description": "tar for node",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/tar@2.2.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/block-stream@0.0.9",
+    "description": "a stream of blocks",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/block-stream@0.0.9?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/fstream@1.0.12",
+    "description": "Advanced file system stream things",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/fstream@1.0.12?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/graceful-fs@4.2.4",
+    "description": "A drop-in replacement for fs, making various improvements.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/graceful-fs@4.2.4?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/tar-pack@3.4.1",
+    "description": "Package and un-package modules of some sort (in tar/gz bundles).",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/tar-pack@3.4.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/debug@2.6.9",
+    "description": "small debugging utility",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/debug@2.6.9?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/ms@2.0.0",
+    "description": "Tiny millisecond conversion utility",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/ms@2.0.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/fstream-ignore@1.0.5",
+    "description": "A thing for ignoring files based on globs",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/fstream-ignore@1.0.5?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/uid-number@0.0.6",
+    "description": "Convert a username/group name to a uid/gid number",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/uid-number@0.0.6?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/csurf@1.11.0",
+    "description": "CSRF token middleware",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/csurf@1.11.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/cookie@0.4.0",
+    "description": "HTTP server cookie parsing and serialization",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/cookie@0.4.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/cookie-signature@1.0.6",
+    "description": "Sign and unsign cookies",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/cookie-signature@1.0.6?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/csrf@3.1.0",
+    "description": "primary logic behind csrf tokens",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/csrf@3.1.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/rndm@1.2.0",
+    "description": "random string generator",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/rndm@1.2.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/tsscmp@1.0.6",
+    "description": "Timing safe string compare using double HMAC",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/tsscmp@1.0.6?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/uid-safe@2.1.5",
+    "description": "URL and cookie safe UIDs",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/uid-safe@2.1.5?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/random-bytes@1.0.0",
+    "description": "URL and cookie safe UIDs",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/random-bytes@1.0.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/http-errors@1.7.3",
+    "description": "Create HTTP error objects",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/http-errors@1.7.3?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/depd@1.1.2",
+    "description": "Deprecate all the things",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/depd@1.1.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/setprototypeof@1.1.1",
+    "description": "A small polyfill for Object.setprototypeof",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/setprototypeof@1.1.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/statuses@1.5.0",
+    "description": "HTTP status utility",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/statuses@1.5.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/toidentifier@1.0.0",
+    "description": "Convert a string of words to a JavaScript identifier",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/toidentifier@1.0.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/ejs@2.7.4",
+    "description": "Embedded JavaScript templates",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/ejs@2.7.4?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/express@4.17.1",
+    "description": "Fast, unopinionated, minimalist web framework",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/express@4.17.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/accepts@1.3.7",
+    "description": "Higher-level content negotiation",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/accepts@1.3.7?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/negotiator@0.6.2",
+    "description": "HTTP content negotiation",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/negotiator@0.6.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/array-flatten@1.1.1",
+    "description": "Flatten nested arrays",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/array-flatten@1.1.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/body-parser@1.19.0",
+    "description": "Node.js body parsing middleware",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/body-parser@1.19.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/bytes@3.1.0",
+    "description": "Utility to parse a string bytes to bytes and vice-versa",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/bytes@3.1.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/content-type@1.0.4",
+    "description": "Create and parse HTTP Content-Type header",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/content-type@1.0.4?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/http-errors@1.7.2",
+    "description": "Create HTTP error objects",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/http-errors@1.7.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/inherits@2.0.3",
+    "description": "Browser-friendly inheritance fully compatible with standard node.js inherits()",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/inherits@2.0.3?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/iconv-lite@0.4.24",
+    "description": "Convert character encodings in pure javascript.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/iconv-lite@0.4.24?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/on-finished@2.3.0",
+    "description": "Execute a callback when a request closes, finishes, or errors",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/on-finished@2.3.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/ee-first@1.1.1",
+    "description": "return the first event in a set of ee/event pairs",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/ee-first@1.1.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/qs@6.7.0",
+    "description": "A querystring parser that supports nesting and arrays, with a depth limit",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/qs@6.7.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/raw-body@2.4.0",
+    "description": "Get and validate the raw body of a readable stream.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/raw-body@2.4.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/unpipe@1.0.0",
+    "description": "Unpipe a stream from all destinations",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/unpipe@1.0.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/type-is@1.6.18",
+    "description": "Infer the content-type of a request.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/type-is@1.6.18?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/media-typer@0.3.0",
+    "description": "Simple RFC 6838 media type parser and formatter",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/media-typer@0.3.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/content-disposition@0.5.3",
+    "description": "Create and parse Content-Disposition header",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/content-disposition@0.5.3?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/encodeurl@1.0.2",
+    "description": "Encode a URL to a percent-encoded form, excluding already-encoded sequences",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/encodeurl@1.0.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/escape-html@1.0.3",
+    "description": "Escape string for use in HTML",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/escape-html@1.0.3?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/etag@1.8.1",
+    "description": "Create simple HTTP ETags",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/etag@1.8.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/finalhandler@1.1.2",
+    "description": "Node.js final http responder",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/finalhandler@1.1.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/parseurl@1.3.3",
+    "description": "parse a url with memoization",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/parseurl@1.3.3?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/fresh@0.5.2",
+    "description": "HTTP response freshness testing",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/fresh@0.5.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/merge-descriptors@1.0.1",
+    "description": "Merge objects using descriptors",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/merge-descriptors@1.0.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/methods@1.1.2",
+    "description": "HTTP methods that node supports",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/methods@1.1.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/path-to-regexp@0.1.7",
+    "description": "Express style path to RegExp utility",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/path-to-regexp@0.1.7?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/proxy-addr@2.0.6",
+    "description": "Determine address of proxied request",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/proxy-addr@2.0.6?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/forwarded@0.1.2",
+    "description": "Parse HTTP X-Forwarded-For header",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/forwarded@0.1.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/ipaddr.js@1.9.1",
+    "description": "A library for manipulating IPv4 and IPv6 addresses in JavaScript.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/ipaddr.js@1.9.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/range-parser@1.2.1",
+    "description": "Range header field string parser",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/range-parser@1.2.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/send@0.17.1",
+    "description": "Better streaming static file server with Range and conditional-GET support",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/send@0.17.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/destroy@1.0.4",
+    "description": "destroy a stream if possible",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/destroy@1.0.4?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/mime@1.6.0",
+    "description": "A comprehensive library for mime-type mapping",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/mime@1.6.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/ms@2.1.1",
+    "description": "Tiny millisecond conversion utility",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/ms@2.1.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/serve-static@1.14.1",
+    "description": "Serve static files",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/serve-static@1.14.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/utils-merge@1.0.1",
+    "description": "merge() utility function",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/utils-merge@1.0.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/vary@1.1.2",
+    "description": "Manipulate the HTTP Vary header",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/vary@1.1.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/express-fileupload@0.4.0",
+    "description": "Simple express file upload middleware that wraps around Busboy",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/express-fileupload@0.4.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/busboy@0.2.14",
+    "description": "A streaming parser for HTML form data for node.js",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/busboy@0.2.14?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/dicer@0.2.5",
+    "description": "A very fast streaming multipart parser for node.js",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/dicer@0.2.5?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/readable-stream@1.1.14",
+    "description": "Streams3, a user-land copy of the stream library from Node.js",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/readable-stream@1.1.14?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/isarray@0.0.1",
+    "description": "Array#isArray for older browsers",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/isarray@0.0.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/string_decoder@0.10.31",
+    "description": "The string_decoder module from Node core",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/string_decoder@0.10.31?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/streamsearch@0.1.2",
+    "description": "Streaming Boyer-Moore-Horspool searching for node.js",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/streamsearch@0.1.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/fs-extra@4.0.3",
+    "description": "fs-extra contains methods that aren't included in the vanilla Node.js fs package. Such as recursive mkdir, copy, and remove.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/fs-extra@4.0.3?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/jsonfile@4.0.0",
+    "description": "Easily read/write JSON files.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/jsonfile@4.0.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/universalify@0.1.2",
+    "description": "Make a callback- or promise-based function support both promises and callbacks.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/universalify@0.1.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/md5@2.3.0",
+    "description": "js function for hashing messages with MD5",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/md5@2.3.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/charenc@0.0.2",
+    "description": "character encoding utilities",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/charenc@0.0.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/crypt@0.0.2",
+    "description": "utilities for encryption and hashing",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/crypt@0.0.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/is-buffer@1.1.6",
+    "description": "Determine if an object is a Buffer",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/is-buffer@1.1.6?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/streamifier@0.1.1",
+    "description": "Converts a Buffer/String into a readable stream",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/streamifier@0.1.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/express-flash@0.0.2",
+    "description": "Flash Messages for your Express Application",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/express-flash@0.0.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/connect-flash@0.1.1",
+    "description": "Flash message middleware for Connect.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/connect-flash@0.1.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/express-session@1.17.1",
+    "description": "Simple session middleware for Express",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/express-session@1.17.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/depd@2.0.0",
+    "description": "Deprecate all the things",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/depd@2.0.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/on-headers@1.0.2",
+    "description": "Execute a listener when a response is about to write headers",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/on-headers@1.0.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/safe-buffer@5.2.0",
+    "description": "Safer Node.js Buffer API",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/safe-buffer@5.2.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/flash@1.1.0",
+    "description": "Simple flash messages for Express",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/flash@1.1.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/libxmljs@0.19.7",
+    "description": "libxml bindings for v8 javascript engine",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/libxmljs@0.19.7?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/bindings@1.3.1",
+    "description": "Helper module for loading your native module's .node file",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/bindings@1.3.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/nan@2.14.2",
+    "description": "Native Abstractions for Node.js: C++ header for Node 0.8 -> 14 compatibility",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/nan@2.14.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/node-pre-gyp@0.11.0",
+    "description": "Node.js native addon binary install tool",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/node-pre-gyp@0.11.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/detect-libc@1.0.3",
+    "description": "Node.js module to detect the C standard library (libc) implementation family and version",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/detect-libc@1.0.3?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/needle@2.5.2",
+    "description": "The leanest and most handsome HTTP client in the Nodelands.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/needle@2.5.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/debug@3.2.7",
+    "description": "small debugging utility",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/debug@3.2.7?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/ms@2.1.3",
+    "description": "Tiny millisecond conversion utility",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/ms@2.1.3?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/sax@1.2.4",
+    "description": "An evented streaming XML parser in JavaScript",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/sax@1.2.4?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/npm-packlist@1.4.8",
+    "description": "Get a list of the files to add from a folder into an npm package",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/npm-packlist@1.4.8?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/ignore-walk@3.0.3",
+    "description": "Nested/recursive `.gitignore`/`.npmignore` parsing and filtering.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/ignore-walk@3.0.3?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/npm-bundled@1.1.1",
+    "description": "list things in node_modules that are bundledDependencies, or transitive dependencies thereof",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/npm-bundled@1.1.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/npm-normalize-package-bin@1.0.1",
+    "description": "Turn any flavor of allowable package.json bin into a normalized object",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/npm-normalize-package-bin@1.0.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/tar@4.4.13",
+    "description": "tar for node",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/tar@4.4.13?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/chownr@1.1.4",
+    "description": "like `chown -R`",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/chownr@1.1.4?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/fs-minipass@1.2.7",
+    "description": "fs read and write streams based on minipass",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/fs-minipass@1.2.7?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/minipass@2.9.0",
+    "description": "minimal implementation of a PassThrough stream",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/minipass@2.9.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/yallist@3.1.1",
+    "description": "Yet Another Linked List",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/yallist@3.1.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/minizlib@1.3.3",
+    "description": "A small fast zlib stream built on [minipass](http://npm.im/minipass) and Node.js's zlib binding.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/minizlib@1.3.3?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/mathjs@3.10.1",
+    "description": "Math.js is an extensive math library for JavaScript and Node.js. It features a flexible expression parser with support for symbolic computation, comes with a large set of built-in functions and constants, and offers an integrated solution to work with dif",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/mathjs@3.10.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": [
+      {
+        "id": "6e815112-1cfa-48a6-a98f-e5e5fd70d4fa",
+        "title": "CWE-94: Improper Control of Generation of Code ('Code Injection')",
+        "description": "The software constructs all or part of a code segment using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the syntax or behavior of the intended code segment.",
+        "cvssScore": 8.8,
+        "cvssVector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "reference": "https://ossindex.sonatype.org/vuln/6e815112-1cfa-48a6-a98f-e5e5fd70d4fa?component-type=npm&component-name=mathjs&utm_source=auditjs&utm_medium=integration&utm_content=4.0.18"
+      },
+      {
+        "id": "51031497-800c-43b4-a798-95c20e0d17e9",
+        "title": "[CVE-2017-1001003]  Improper Input Validation",
+        "description": "math.js before 3.17.0 had an issue where private properties such as a constructor could be replaced by using unicode characters when creating an object.",
+        "cvssScore": 9.8,
+        "cvssVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cve": "CVE-2017-1001003",
+        "reference": "https://ossindex.sonatype.org/vuln/51031497-800c-43b4-a798-95c20e0d17e9?component-type=npm&component-name=mathjs&utm_source=auditjs&utm_medium=integration&utm_content=4.0.18"
+      },
+      {
+        "id": "1e6c8e7a-4371-43fe-8772-1aedc76baca1",
+        "title": "[CVE-2017-1001002] math.js before 3.17.0 had an arbitrary code execution in the JavaScript engine. ...",
+        "description": "math.js before 3.17.0 had an arbitrary code execution in the JavaScript engine. Creating a typed function with JavaScript code in the name could result arbitrary execution.",
+        "cvssScore": 9.8,
+        "cvssVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "cve": "CVE-2017-1001002",
+        "reference": "https://ossindex.sonatype.org/vuln/1e6c8e7a-4371-43fe-8772-1aedc76baca1?component-type=npm&component-name=mathjs&utm_source=auditjs&utm_medium=integration&utm_content=4.0.18"
+      }
+    ]
+  },
+  {
+    "coordinates": "pkg:npm/complex.js@2.0.1",
+    "description": "A complex number library",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/complex.js@2.0.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/decimal.js@7.1.1",
+    "description": "An arbitrary-precision Decimal type for JavaScript.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/decimal.js@7.1.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/fraction.js@4.0.0",
+    "description": "A rational number library",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/fraction.js@4.0.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/seed-random@2.2.0",
+    "description": "Generate random numbers with a seed, useful for reproducible tests",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/seed-random@2.2.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/tiny-emitter@1.0.2",
+    "description": "A tiny (less than 1k) event emitter library",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/tiny-emitter@1.0.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/typed-function@0.10.5",
+    "description": "Type checking for JavaScript functions",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/typed-function@0.10.5?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": [
+      {
+        "id": "9cc5f186-a03a-4c49-910a-047ea7bae9ec",
+        "title": "[CVE-2017-1001004]  Improper Input Validation",
+        "description": "typed-function before 0.10.6 had an arbitrary code execution in the JavaScript engine. Creating a typed function with JavaScript code in the name could result arbitrary execution.",
+        "cvssScore": 8.8,
+        "cvssVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+        "cve": "CVE-2017-1001004",
+        "reference": "https://ossindex.sonatype.org/vuln/9cc5f186-a03a-4c49-910a-047ea7bae9ec?component-type=npm&component-name=typed-function&utm_source=auditjs&utm_medium=integration&utm_content=4.0.18"
+      },
+      {
+        "id": "656aa499-2044-4aaf-a920-83bfed2e56d9",
+        "title": "CWE-94: Improper Control of Generation of Code ('Code Injection')",
+        "description": "The software constructs all or part of a code segment using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the syntax or behavior of the intended code segment.",
+        "cvssScore": 8.8,
+        "cvssVector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+        "reference": "https://ossindex.sonatype.org/vuln/656aa499-2044-4aaf-a920-83bfed2e56d9?component-type=npm&component-name=typed-function&utm_source=auditjs&utm_medium=integration&utm_content=4.0.18"
+      }
+    ]
+  },
+  {
+    "coordinates": "pkg:npm/morgan@1.10.0",
+    "description": "HTTP request logger middleware for node.js",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/morgan@1.10.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/basic-auth@2.0.1",
+    "description": "node.js basic auth parser",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/basic-auth@2.0.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/mysql2@1.7.0",
+    "description": "fast mysql driver. Implements core protocol, prepared statements, ssl and compression in native JS",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/mysql2@1.7.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/denque@1.4.1",
+    "description": "The fastest javascript implementation of a double-ended queue. Maintains compatability with deque.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/denque@1.4.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/generate-function@2.3.1",
+    "description": "Module that helps you write generated functions in Node",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/generate-function@2.3.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/is-property@1.0.2",
+    "description": "Tests if a JSON property can be accessed using . syntax",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/is-property@1.0.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/iconv-lite@0.5.2",
+    "description": "Convert character encodings in pure javascript.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/iconv-lite@0.5.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/long@4.0.0",
+    "description": "A Long class for representing a 64-bit two's-complement integer value.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/long@4.0.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/lru-cache@5.1.1",
+    "description": "A cache object that deletes the least-recently-used items.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/lru-cache@5.1.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/named-placeholders@1.1.2",
+    "description": "sql named placeholders to unnamed compiler",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/named-placeholders@1.1.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/lru-cache@4.1.5",
+    "description": "A cache object that deletes the least-recently-used items.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/lru-cache@4.1.5?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/pseudomap@1.0.2",
+    "description": "A thing that is a lot like ES6 `Map`, but without iterators, for use in environments where `for..of` syntax and `Map` are not available.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/pseudomap@1.0.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/yallist@2.1.2",
+    "description": "Yet Another Linked List",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/yallist@2.1.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/seq-queue@0.0.5",
+    "description": "A simple tool to keep requests to be executed in order.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/seq-queue@0.0.5?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/sqlstring@2.3.2",
+    "description": "Simple SQL escape and format for MySQL",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/sqlstring@2.3.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/node-serialize@0.0.4",
+    "description": "Serialize a object including it's function into a JSON.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/node-serialize@0.0.4?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/passport@0.4.1",
+    "description": "Simple, unobtrusive authentication for Node.js.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/passport@0.4.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/passport-strategy@1.0.0",
+    "description": "An abstract class implementing Passport's strategy API.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/passport-strategy@1.0.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/pause@0.0.1",
+    "description": "Pause a stream's data events",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/pause@0.0.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/passport-local@1.0.0",
+    "description": "Local username and password authentication strategy for Passport.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/passport-local@1.0.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/sequelize@4.44.4",
+    "description": "Multi dialect ORM for Node.JS",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/sequelize@4.44.4?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": [
+      {
+        "id": "cb8ee38e-f0cd-4657-8d6b-2713f193b39d",
+        "title": "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')",
+        "description": "The software does not properly restrict the size or amount of resources that are requested or influenced by an actor, which can be used to consume more resources than intended.",
+        "cvssScore": 7.5,
+        "cvssVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "reference": "https://ossindex.sonatype.org/vuln/cb8ee38e-f0cd-4657-8d6b-2713f193b39d?component-type=npm&component-name=sequelize&utm_source=auditjs&utm_medium=integration&utm_content=4.0.18"
+      },
+      {
+        "id": "bc5cce9c-eaf8-42de-bfc2-2b90655f5225",
+        "title": "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",
+        "description": "The software constructs all or part of an SQL command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended SQL command when it is sent to a downstream component.",
+        "cvssScore": 9.9,
+        "cvssVector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+        "reference": "https://ossindex.sonatype.org/vuln/bc5cce9c-eaf8-42de-bfc2-2b90655f5225?component-type=npm&component-name=sequelize&utm_source=auditjs&utm_medium=integration&utm_content=4.0.18"
+      },
+      {
+        "id": "47c93aa7-1b5c-4c19-9567-643dc7871097",
+        "title": "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",
+        "description": "The software constructs all or part of an SQL command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended SQL command when it is sent to a downstream component.",
+        "cvssScore": 9.9,
+        "cvssVector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+        "reference": "https://ossindex.sonatype.org/vuln/47c93aa7-1b5c-4c19-9567-643dc7871097?component-type=npm&component-name=sequelize&utm_source=auditjs&utm_medium=integration&utm_content=4.0.18"
+      }
+    ]
+  },
+  {
+    "coordinates": "pkg:npm/bluebird@3.7.2",
+    "description": "Full featured Promises/A+ implementation with exceptionally good performance",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/bluebird@3.7.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/cls-bluebird@2.1.0",
+    "description": "Make bluebird work with the continuation-local-storage module.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/cls-bluebird@2.1.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/is-bluebird@1.0.2",
+    "description": "Is this a bluebird promise I see before me?",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/is-bluebird@1.0.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/shimmer@1.2.1",
+    "description": "Safe(r) monkeypatching for JavaScript.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/shimmer@1.2.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/dottie@2.0.2",
+    "description": "Fast and safe nested object access and manipulation in JavaScript",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/dottie@2.0.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/generic-pool@3.5.0",
+    "description": "Generic resource pooling for Node.JS",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/generic-pool@3.5.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/inflection@1.12.0",
+    "description": "A port of inflection-js to node.js module",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/inflection@1.12.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/lodash@4.17.20",
+    "description": "Lodash modular utilities.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/lodash@4.17.20?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/moment@2.29.1",
+    "description": "Parse, validate, manipulate, and display dates",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/moment@2.29.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/moment-timezone@0.5.32",
+    "description": "Parse and display moments in any timezone.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/moment-timezone@0.5.32?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/retry-as-promised@2.3.2",
+    "description": "Retry a failed promise",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/retry-as-promised@2.3.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/terraformer-wkt-parser@1.2.1",
+    "description": "Well-Known Text parser",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/terraformer-wkt-parser@1.2.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/%40types/geojson@1.0.6",
+    "description": "TypeScript definitions for geojson",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/%40types/geojson@1.0.6?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/terraformer@1.0.12",
+    "description": "A Geo-toolkit built in Javascript.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/terraformer@1.0.12?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/toposort-class@1.0.1",
+    "description": "Topological sort of directed acyclic graphs (like dependecy lists)",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/toposort-class@1.0.1?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/validator@10.11.0",
+    "description": "String validation and sanitization",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/validator@10.11.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/wkx@0.4.8",
+    "description": "A WKT/WKB/EWKT/EWKB/TWKB/GeoJSON parser and serializer",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/wkx@0.4.8?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/%40types/node@14.14.14",
+    "description": "TypeScript definitions for Node.js",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/%40types/node@14.14.14?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/winston@3.3.3",
+    "description": "A logger for just about everything.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/winston@3.3.3?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/%40dabh/diagnostics@2.0.2",
+    "description": "Tools for debugging your node.js modules and event loop",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/%40dabh/diagnostics@2.0.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/colorspace@1.1.2",
+    "description": "Generate HEX colors for a given namespace.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/colorspace@1.1.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/color@3.0.0",
+    "description": "Color conversion and manipulation with CSS string support",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/color@3.0.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/color-convert@1.9.3",
+    "description": "Plain color conversion functions",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/color-convert@1.9.3?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/color-name@1.1.3",
+    "description": "A list of color names and its values",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/color-name@1.1.3?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/color-string@1.5.4",
+    "description": "Parser and generator for CSS color strings",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/color-string@1.5.4?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/simple-swizzle@0.2.2",
+    "description": "Simply swizzle your arguments",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/simple-swizzle@0.2.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/is-arrayish@0.3.2",
+    "description": "Determines if an object can be used as an array",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/is-arrayish@0.3.2?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/text-hex@1.0.0",
+    "description": "Generate a hex color from the given text",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/text-hex@1.0.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/enabled@2.0.0",
+    "description": "Check if a certain debug flag is enabled.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/enabled@2.0.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/kuler@2.0.0",
+    "description": "Color your terminal using CSS/hex color codes",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/kuler@2.0.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/async@3.2.0",
+    "description": "Higher-order functions and common patterns for asynchronous code",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/async@3.2.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/is-stream@2.0.0",
+    "description": "Check if something is a Node.js stream",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/is-stream@2.0.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/logform@2.2.0",
+    "description": "An mutable object-based log format designed for chaining & objectMode streams.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/logform@2.2.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/colors@1.4.0",
+    "description": "get colors in your node.js console",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/colors@1.4.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/fast-safe-stringify@2.0.7",
+    "description": "Safely and quickly serialize JavaScript objects",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/fast-safe-stringify@2.0.7?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/fecha@4.2.0",
+    "description": "Date formatting and parsing",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/fecha@4.2.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/triple-beam@1.3.0",
+    "description": "Definitions of levels for logging purposes & shareable Symbol constants.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/triple-beam@1.3.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/one-time@1.0.0",
+    "description": "Run the supplied function exactly one time (once)",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/one-time@1.0.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/fn.name@1.1.0",
+    "description": "Extract names from functions",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/fn.name@1.1.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/readable-stream@3.6.0",
+    "description": "Streams3, a user-land copy of the stream library from Node.js",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/readable-stream@3.6.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/stack-trace@0.0.10",
+    "description": "Get v8 stack traces as an array of CallSite objects.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/stack-trace@0.0.10?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/winston-transport@4.4.0",
+    "description": "Base stream implementations for winston@3 and up.",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/winston-transport@4.4.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  },
+  {
+    "coordinates": "pkg:npm/x-xss-protection@1.3.0",
+    "description": "Middleware to set the X-XSS-Protection header",
+    "reference": "https://ossindex.sonatype.org/component/pkg:npm/x-xss-protection@1.3.0?utm_source=auditjs&utm_medium=integration&utm_content=4.0.18",
+    "vulnerabilities": []
+  }
+]

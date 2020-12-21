@@ -7,6 +7,7 @@
 5. Compare various SCA tools on basis of their performance and accuracy.
 6. Perform Static Application Security Testing (SAST) using various tools and store the generated reports.
 7. Compare various SAST tools on basis of their performance and accuracy.
+8. Perform Dynamic Application Security Testing (DAST) using various tools and store the generated reports.
 
 ## Task 2
 
