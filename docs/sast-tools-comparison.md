@@ -2,7 +2,7 @@
 
 ## Objective
 
-This section aims to accomplish the objectives listed as 7<sup>th</sup> point of [`Task 1`](../problem-statement/#task-1) under the [Problem Statement](../problem-statement).
+This section aims to accomplish the objective listed as 7<sup>th</sup> point of [`Task 1`](../problem-statement/#task-1) under the [Problem Statement](../problem-statement).
 
 ## Comparing the tools
 

@@ -2,7 +2,7 @@
 
 ## Objective
 
-This section aims at completing the objectives listed as [`Task 2`](../problem-statement#task-2) under the [Problem Statement](../problem-statement).
+This section aims at completing the objectives listed under [`Task 2`](../problem-statement#task-2) as per the [Problem Statement](../problem-statement).
 
 ## Need for documentation
 
