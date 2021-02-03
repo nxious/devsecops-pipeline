@@ -1,0 +1,287 @@
+
+/var/lib/jenkins/workspace/DVNA/core/appHandler.js
+   30:11  error  'err' is defined but never used  no-unused-vars
+   40:3   error  'output' is not defined          no-undef
+   42:12  error  'output' is not defined          no-undef
+   49:3   error  'output' is not defined          no-undef
+   53:12  error  'output' is not defined          no-undef
+   66:3   error  'output' is not defined          no-undef
+   71:12  error  'output' is not defined          no-undef
+   78:3   error  'output' is not defined          no-undef
+   82:12  error  'output' is not defined          no-undef
+   93:4   error  'output' is not defined          no-undef
+   97:13  error  'output' is not defined          no-undef
+  125:4   error  'output' is not defined          no-undef
+  130:13  error  'output' is not defined          no-undef
+
+/var/lib/jenkins/workspace/DVNA/core/passport.js
+  54:13  error  'findOrCreateUser' is not defined  no-undef
+  82:30  error  'findOrCreateUser' is not defined  no-undef
+
+/var/lib/jenkins/workspace/DVNA/models/index.js
+   6:5   error  'env' is assigned a value but never used  no-unused-vars
+  12:7   error  'sequelize' is already defined            no-redeclare
+  20:19  error  'err' is defined but never used           no-unused-vars
+  29:19  error  'err' is defined but never used           no-unused-vars
+
+/var/lib/jenkins/workspace/DVNA/public/assets/jquery-3.2.1.min.js
+  2:5774   error  Unexpected control character(s) in regular expression: \x1f, \x1f          no-control-regex
+  2:6247   error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:6501   error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:6932   error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:7158   error  Empty block statement                                                      no-empty
+  2:7720   error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:9786   error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:10096  error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:11897  error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:12473  error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:12511  error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:12929  error  Empty block statement                                                      no-empty
+  2:13543  error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:13855  error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:15679  error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:15950  error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:16150  error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:16526  error  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  2:17229  error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:19571  error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:19671  error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:19731  error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:21090  error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:21704  error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:21815  error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:24136  error  Unnecessary escape character: \/                                           no-useless-escape
+  2:24200  error  Unnecessary escape character: \[                                           no-useless-escape
+  2:24202  error  Unnecessary escape character: \.                                           no-useless-escape
+  3:1907   error  Empty block statement                                                      no-empty
+  3:5602   error  Unnecessary escape character: \/                                           no-useless-escape
+  3:6813   error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  3:6953   error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  3:7591   error  Empty block statement                                                      no-empty
+  3:14345  error  Unnecessary escape character: \/                                           no-useless-escape
+  3:16613  error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  3:18185  error  Empty block statement                                                      no-empty
+  3:25385  error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  3:27946  error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  4:246    error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  4:1955   error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  4:2021   error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  4:2360   error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  4:2426   error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  4:2843   error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  4:3120   error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  4:8856   error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  4:11348  error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  4:12069  error  'j.href' is assigned to itself                                             no-self-assign
+  4:15632  error  Empty block statement                                                      no-empty
+  4:22290  error  'define' is not defined                                                    no-undef
+  4:22302  error  'define' is not defined                                                    no-undef
+
+/var/lib/jenkins/workspace/DVNA/public/assets/showdown.min.js
+  3:2930   error  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  3:4209   error  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  3:5814   error  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  3:6131   error  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  3:6237   error  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  3:6364   error  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  3:6537   error  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  3:6801   error  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  3:7265   error  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  3:8141   error  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  3:8242   error  Unnecessary escape character: \/                                           no-useless-escape
+  3:8405   error  Unnecessary escape character: \[                                           no-useless-escape
+  3:8669   error  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  3:10823  error  Read-only global 'console' should not be modified                          no-global-assign
+  3:11693  error  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  3:11764  error  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  3:12408  error  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  3:12619  error  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  3:12797  error  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  3:12916  error  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  3:14286  error  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  3:14375  error  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  3:15476  error  Unnecessary escape character: \[                                           no-useless-escape
+  3:15549  error  Unnecessary escape character: \[                                           no-useless-escape
+  3:15657  error  Unnecessary escape character: \[                                           no-useless-escape
+  3:15776  error  Unnecessary escape character: \[                                           no-useless-escape
+  3:15848  error  Unnecessary escape character: \-                                           no-useless-escape
+  3:16294  error  Unnecessary escape character: \[                                           no-useless-escape
+  3:16415  error  Unnecessary escape character: \/                                           no-useless-escape
+  3:18490  error  Spaces are hard to count. Use {2}                                          no-regex-spaces
+  3:20162  error  Unnecessary escape character: \/                                           no-useless-escape
+  3:20507  error  Unnecessary escape character: \[                                           no-useless-escape
+  3:20821  error  Unnecessary escape character: \[                                           no-useless-escape
+  3:21094  error  Unnecessary escape character: \/                                           no-useless-escape
+  3:25598  error  Unnecessary escape character: \/                                           no-useless-escape
+  3:25613  error  Unnecessary escape character: \[                                           no-useless-escape
+  3:28482  error  Unnecessary escape character: \[                                           no-useless-escape
+  4:5440   error  'define' is not defined                                                    no-undef
+  4:5451   error  'define' is not defined                                                    no-undef
+
+/var/lib/jenkins/workspace/DVNA/server.js
+  5:5  error  'ejs' is assigned a value but never used  no-unused-vars
+
+/var/lib/jenkins/workspace/DVNA/views/app/admin.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/app/adminusers.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/app/bulkproducts.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/app/calc.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/app/modifyproduct.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/app/ping.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/app/products.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/app/useredit.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/app/usersearch.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/common/footer.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/common/head.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/common/navigation.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/forgotpw.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/learn.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/login.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/register.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/resetpw.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/a10_logging/description.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/a10_logging/reference.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/a10_logging/scenario.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/a1_injection/description.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/a1_injection/reference.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/a1_injection/scenario.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/a2_broken_auth/description.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/a2_broken_auth/reference.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/a2_broken_auth/scenario.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/a3_sensitive_data/description.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/a3_sensitive_data/reference.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/a3_sensitive_data/scenario.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/a4_xxe/description.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/a4_xxe/reference.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/a4_xxe/scenario.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/a5_broken_access_control/description.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/a5_broken_access_control/reference.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/a5_broken_access_control/scenario.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/a6_sec_misconf/description.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/a6_sec_misconf/reference.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/a6_sec_misconf/scenario.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/a7_xss/description.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/a7_xss/reference.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/a7_xss/scenario.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/a8_ides/description.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/a8_ides/reference.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/a8_ides/scenario.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/a9_vuln_component/description.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/a9_vuln_component/reference.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/a9_vuln_component/scenario.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/ax_csrf/description.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/ax_csrf/reference.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/ax_csrf/scenario.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/ax_redirect/description.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/ax_redirect/reference.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/ax_redirect/scenario.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+/var/lib/jenkins/workspace/DVNA/views/vulnerabilities/layout.ejs
+  1:1  error  Parsing error: Unexpected token <
+
+✖ 164 problems (164 errors, 0 warnings)
+  1 error and 0 warnings potentially fixable with the `--fix` option.

@@ -15,6 +15,7 @@ nav:
 - Static analysis (SAST): 'static-analysis.md'
 - SAST tools comparison: 'sast-tools-comparison.md'
 - Dynamic analysis (DAST): 'dynamic-analysis.md'
+- Code Linting: 'code-linting.md'
 - Software Bill of Materials (SBoM): 'software-bill-of-materials.md'
 - Resources and references: 'resources-and-references.md'
 

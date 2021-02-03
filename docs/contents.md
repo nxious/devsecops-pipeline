@@ -13,5 +13,6 @@ The following are the various contents of this report as per the problem stateme
 - [Static Analysis (SAST)](../static-analysis)
 - [SAST Tools comparsion](../sast-tools-comparison)
 - [Dynamic Analysis (DAST)](../dynamic-analysis)
+- [Code Linting](../code-linting)
 - [Software Bill of Materials (SBoM)](../software-bill-of-materials)
 - [Resources and references](../resources-and-references)
