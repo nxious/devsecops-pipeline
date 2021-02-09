@@ -17,6 +17,8 @@ nav:
 - Dynamic analysis (DAST): 'dynamic-analysis.md'
 - Code Linting: 'code-linting.md'
 - Software Bill of Materials (SBoM): 'software-bill-of-materials.md'
+- Final Pipeline Structure: 'final-pipeline-structure.md'
+- Migrating to AWS: 'migrating-to-aws.md'
 - Resources and references: 'resources-and-references.md'
 
 theme: 

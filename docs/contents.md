@@ -15,4 +15,6 @@ The following are the various contents of this report as per the problem stateme
 - [Dynamic Analysis (DAST)](../dynamic-analysis)
 - [Code Linting](../code-linting)
 - [Software Bill of Materials (SBoM)](../software-bill-of-materials)
+- [Final Pipeline Structure](../final-pipeline-structure)
+- [Migrating to AWS](../migrating-to-aws)
 - [Resources and references](../resources-and-references)
