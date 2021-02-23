@@ -184,6 +184,8 @@ This command will prompt us to input our AWS Access Key ID and Secret Access Key
 
 Once we are autheticated via AWS CLI, we can proceed to follow the push commands provided by ECR.
 
+**Note:** Please make sure the correct region is specified while using `aws configure` and creating a repository. ECR and ECS items can only be accessed in the region they are deployed.
+
 ### Task definition
 
 A task definition in ECS is required to run the container image. It is the configuration of our container deployment and contains various details such as the image to be deployed, resources such as CPU and RAM to be allocated, type of infrastructure etc.
