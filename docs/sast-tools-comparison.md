@@ -2,13 +2,13 @@
 
 ## Objective
 
-This section aims to accomplish the objective listed as 7<sup>th</sup> point of [`Task 1`](../problem-statement/#task-1) under the [Problem Statement](../problem-statement).
+This section aims to accomplish the objective listed as 7<sup>th</sup> point of [`Task 2`](../problem-statement/#task-2) under the [Problem Statement](../problem-statement).
 
 ## Comparing the tools
 
 The tools used for SAST in the previous phase allowed us to scan for vulnerabilities in our source code of the application by applying various analysis methods. Each tool had a different approach and performed differently for the same application. The following comparison allows us to compare the tools used and check the different types of vulnerabilities identified.
 
-A multi-tool approach allows us to have a more thorough analysis of the application as each tool has its own way of approaching and scanning the application. What one tool might find safe, might be flagged as a vulnerability by another tool and vice versa. Hence for production applications the tool with the least false positives and proper vulnerability identification must be the ideal choice.
+A multi-tool approach allows us to have a more thorough analysis of the application as each tool has its own way of approaching and scanning the application. What one tool might find safe might be flagged as a vulnerability by another tool and vice versa. Hence, for production applications, the tool with the least false positives and proper vulnerability identification must be the ideal choice.
 
 The table below provides a quick summary of the tools and their outcomes:
 
@@ -44,7 +44,7 @@ insider was able to identify `3` vulnerabilities, which were dependency-based.
 |Arbitrary Code Execution   |CWE-94 |Critical   |math.js@3.17.0 |
 |Arbitrary Code Execution   |CWE-94 |Critical   |math.js@3.17.0 |
 
-However, it gave the application code a score of `100/100` which means it was unable to scan the application properly.
+However, it gave the application code a score of `100/100,` which means it could not scan the application properly.
 
 ```
 Score Security 100/100
@@ -90,12 +90,12 @@ The complete report can be accessed [here](/reports/snyk-report.json){target="_b
 
 ### Sonarqube Scanner
 
-Sonarqube Scanner provided us with a report that comprised of `5` bugs and `0` vulnerabilities. All of the bugs were related to `Unexpected missing generic font family` which seems to be a syntax/linting error, making Sonarqube Scanner the least useful tool among the bunch. 
+Sonarqube Scanner provided us with a report that comprised of `5` bugs and `0` vulnerabilities. All the bugs were related to `Unexpected missing generic font family`, which seems to be a syntax/linting error, making Sonarqube Scanner the least useful tool among the bunch. 
 
-Upon a check of their website, I discovered that they offer only a fraction of rules for Javascript as compared to Java/C#/C or C++, due to which it failed at identifying vulnerabilities in our application which is entirely node.js based.
+Upon a check of their website, I discovered that they offer only a fraction of rules for Javascript as compared to Java/C#/C or C++, due to which it failed at identifying vulnerabilities in our application, which is entirely node.js based.
 
 The report is only accessible using the SonarQube server's dashboard.
 
 ## Conclusion
 
-njsscan proved to be the most powerful tool among the 4 as it was able to identify the vulnerabilities in the application code as well as dependency-based vulnerabilities. snyk.io and insider are runner ups as they mostly focused on the dependency-based vulnerabilities rather than finding actual issues within the application code. Sonarqube was unable to identify any vulnerabilities at all.
+njsscan proved to be the most powerful tool among the four as it was able to identify the vulnerabilities in the application code as well as dependency-based vulnerabilities. snyk.io and insider are runner ups as they mostly focused on the dependency-based vulnerabilities rather than finding actual issues within the application code. Sonarqube was unable to identify any vulnerabilities at all.

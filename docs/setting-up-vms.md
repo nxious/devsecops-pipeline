@@ -2,7 +2,7 @@
 
 ## Objective
 
-This section aims to accomplish the objectives listed as 1<sup>st</sup> and 2<sup>nd</sup> point of [`Task 1`](../problem-statement/#task-1) under the [Problem Statement](../problem-statement).
+This section aims to accomplish the objectives listed as 1<sup>st</sup> and 2<sup>nd</sup> point of [`Task 2`](../problem-statement/#task-2) under the [Problem Statement](../problem-statement).
 
 ## System Configuration
 
@@ -26,7 +26,7 @@ I proceeded with the `Install suggested plugins` option as guided by my mentors.
 
 **Note: ** Upon trying for the first time, some core plugins failed to install due to issues in the VM. I resolved all the errors by rebuilding the VM and switching to the weekly release instead of the LTS release.
 
-After the setup was complete and the plugins finished installing, I was greeted by the Jenkins dashboard:
+After the setup was complete and the plugins finished installing, I was able to access the Jenkins dashboard:
 
 ![Jenkins Dashboard](images/Jenkins-dashboard.png)
 

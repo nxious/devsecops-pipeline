@@ -2,11 +2,11 @@
 
 ## Objective
 
-This section aims to accomplish the objective listed as 8<sup>th</sup> point of [`Task 1`](../problem-statement/#task-1) under the [Problem Statement](../problem-statement).
+This section aims to accomplish the objective listed as 8<sup>th</sup> point of [`Task 2`](../problem-statement/#task-2) under the [Problem Statement](../problem-statement).
 
 ## What is DAST?
 
-DAST is a method of black-box testing, which involves examining the application and its execution to find vulnerabilities externally. The source code is not available, only access to the application in its running state is provided. The tools used for DAST are generally automated testing suites. 
+DAST is a method of black-box testing, which involves examining the application and its execution to find vulnerabilities externally. The source code is not available, only access to the application in its running state is provided. The tools used for DAST have generally automated testing suites. 
 
 ## Tools used for DAST
 

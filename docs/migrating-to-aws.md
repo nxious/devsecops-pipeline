@@ -2,7 +2,7 @@
 
 ## Objective
 
-In this section, we will be migrating our local VM setup to the cloud on AWS.
+In this section, we will be migrating our local VM setup to the cloud on AWS using various services as per [`Task 3`](../problem-statement/#task-3) listed under the [Problem Statement](../problem-statement).
 
 ## About AWS
 
@@ -14,7 +14,7 @@ Amazon Web Services (AWS) is one of the major cloud providers. They have worldwi
 
 We will be using Elastic Compute 2 (EC2) service on AWS to deploy our Jenkins server. EC2 provides virtual servers in the cloud that can be configured according to our hardware and software requirements. 
 
-To launch an instance, we will navigate to the EC2 Dashboard using the search bar in our AWS portal.
+We will navigate to the EC2 dashboard using the search bar in our AWS portal to launch an instance.
 
 ![EC2 Dashboard](images/ec2-dashboard.png)
 
@@ -36,13 +36,13 @@ The instance storage will be increased to 10GB as it is the minimum recommended 
 
 ![Instance Storage](images/storage.png)
 
-We will add the application type tag to our instance which will allow us to locate the specific instance easily.
+We will add the application type tag to our instance, which will allow us to locate the specific instance easily.
 
 ![Instance Tags](images/instance-tags.png)
 
-In security group configuration, we will be limiting access of the Jenkins dashboard, SonarQube dashboard and SSH to our IP address. The current IP address will be automatically picked up by using `My IP` option.
+We will be limiting access to the Jenkins dashboard, SonarQube dashboard, and SSH to our IP address in the security group configuration. The current IP address will be automatically picked up by using `My IP` option.
 
-**Note:** Make sure you have a static IP address before setting specific IP access. Dynamic IP address would require you to change your IP address in the security group everytime your IP address changes.
+**Note:** Make sure you have a static IP address before setting specific IP access. The dynamic IP address would require you to change your IP address in the security group every time your IP address changes.
 
 ![Security Group Configuration](images/security-group.png)
 
@@ -50,17 +50,17 @@ Now we can review the final configuration of our instance. Once we have an overv
 
 ![Instance Review](images/instance-review.png)
 
-Upon launching the instance, we are asked to either create a new key pair or use and exisitng one. This key will be used to access the instance using SSH.
+Upon launching the instance, we are asked to either create a new key pair or use an existing one. This key will be used to access the instance using SSH.
 
 **Note:** While using an existing key, make sure you have access to the file as AWS allows downloading the file only once at the time of generation.
 
 ![Key](images/key.png)
 
-Once the instance is up and running, the details such as IP address can be accessed from the EC2 dashboard by naigating to the `Running Instances` page. We can also manage and monitor our instance from here. 
+Once the instance is up and running, the details such as IP address can be accessed from the EC2 dashboard by navigating to the `Running Instances` page. We can also manage and monitor our instance from here. 
 
 Once we SSH to our instance, we can proceed to set up Jenkins by following the steps in [Installing Jenkins](../setting-up-vms/#installing-jenkins) and creating our pipeline using the same steps as [Pipeline Setup](../pipeline-setup).
 
-**Note:** The default user for SSH is `ubuntu`.
+**Note:** The default user for SSH is `ubuntu.`
 
 We will be re-installing our complete toolset for various stages (SCA, SAST, etc.). All of the scripts created for the tools will be copied over from our local VM and uploaded to our instance via SFTP.
 
@@ -78,7 +78,7 @@ retire.js was installed by following the same steps as mentioned in the [VM inst
 
 OWASP Dependency Check was installed by following the same steps as mentioned in the [VM installation](../software-composition-analysis/#installation_2).
 
-**Note:** While running the pipeline, Depenency Check was unable to locate the `yarn audit` command, which had to be installed manually using `npm install yarn -g`.
+**Note:** While running the pipeline, Dependency Check was unable to locate the `yarn audit` command, which had to be installed manually using `npm install yarn -g.`
 
 ##### audit.js
 
@@ -110,7 +110,7 @@ The SonarQube server was set to launch at boot by adding the following command t
 
 #### DAST Tools
 
-The DAST phase consists of a single tool, OWASP ZAP. The tool was installed and configured using the same steps as mentioned in [installation steps](../dynamic-analysis/#installation). A seperate `freestyle project` was setup to run the tool.
+The DAST phase consists of a single tool, OWASP ZAP. The tool was installed and configured using the same steps as mentioned in [installation steps](../dynamic-analysis/#installation). A separate `freestyle project` was set up to run the tool.
 
 #### ESLint (Code Linting)
 
@@ -126,7 +126,62 @@ For the application server, we will follow the same steps as we followed for the
 
 - We will launch a `t2.micro` instance with 1 CPU core and 1 GB of RAM, which should be sufficient for running a lightweight node application.
 
-- In the network VPC, we will allow SSH access only from the IP of our Jenkins instance and open port 9090 to everyone as that is the application access point.
+- In the network VPC, we will allow SSH access only from the IP of our Jenkins instance and open port 9090 to my IP as that is the application access point.
 
 The rest of the configuration, such as the MySQL database and SSH access, was done according to steps followed in [Configuring the application VM](../setting-up-vms/#configuring-the-application-vm).
 
+## Deploying using Amazon ECS
+
+Amazon Elastic Container Service (Amazon ECS) is a container management service that allows us to run containers on a cluster. Running our application on ECS saves cost, provides better compatibility and more security as compared to running the same application on an EC2 instance. ECS provides an efficient configuration for using and managing available resources.
+
+To deploy our application on ECS, we need to build a Docker image of our application, push it to a registry and define a task under a service which will deploy the container after pulling it from the registry.
+
+### Builiding the docker image
+
+DVNA comes with a `dockerfile` which contains all the information required to convert it into an image. The `dockerfile` contains the requirements of the application, such as node.js and lists the steps to be executed in order to get the application up and running. Steps for deploying DVNA using Docker have been listed in the application's [readme](https://github.com/appsecco/dvna#using-official-docker-image){target="_blank"}.
+
+### Configuring ECR (Elastic Container Registry)
+
+ECR is a container registry which allows us to easily store, manage, share and deploy container images. This eliminates the need for third-party repositories for maintaing our container images. We will be creating a new registry for our application. 
+
+Once the registry is created, we can use the show push commands button to get a list of steps that we can follow to push our image to the repository.
+
+To authenticate with the repostiory, we need to configure AWS CLI. 
+
+#### Configuring AWS CLI
+
+AWS CLI is a tool which allows us to access and manage AWS services via the command line. We will be using AWS CLI to authenticate ourselves with the ECR and later automate the ECS deployments. 
+
+##### Installation
+
+AWS CLI can be installed either by following the official documentaiton, or by using the following command:
+
+```
+sudo apt install awscli
+```
+
+**Note:** This command will work only if your distributions's . If the package is not found, please follow the manual installation method mentioned in the official documentaiton.
+
+##### Usage
+
+To autheticate our AWS account using the CLI, we need to run the command:
+
+```
+aws configure
+```
+
+This command will prompt us to input our AWS Access Key ID and Secret Access Key. These details are generally provided along with your AWS IAM account details.
+
+Once we are autheticated via AWS CLI, we can proceed to follow the push commands provided by ECR.
+
+### Task definition
+
+A task definition in ECS is required to run the container image. It is the configuration of our container deployment and contains various details such as the image to be deployed, resources such as CPU and RAM to be allocated, type of infrastructure etc.
+
+### Cluster creation
+
+A cluster is
+
+### Service creation
+
+**Note :** While running the service for the first time, the deployment failed and container logs showed the error 'Unable to find host' which was caused due to the missing MySQL environment variables. After adding the required environment variables related to the MySQL database, the container deployed successfully.

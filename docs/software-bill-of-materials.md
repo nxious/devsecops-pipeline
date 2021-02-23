@@ -2,11 +2,13 @@
 
 ## Objective
 
-This section aims to accomplish the objective listed as 9<sup>th</sup> point of [`Task 1`](../problem-statement/#task-1) under the [Problem Statement](../problem-statement).
+This section aims to accomplish the objective listed as 10<sup>th</sup> point of [`Task 1`](../problem-statement/#task-2) under the [Problem Statement](../problem-statement).
+
+We will be generating a Software Bill of Materials (SBoM) for our application.
 
 ## What is SBoM?
 
-A bill of materials (BOM) is a centralized list of details of items used to manufacture a product. Our product is software that has libraries, open-source components, and third-party components in the codebase. Hence we will be generating a `Software Bill of Materials (SBoM)`.
+A bill of materials (BOM) is a centralized list of details of items used to manufacture a product. Our product is software that has libraries, open-source components, and third-party components in the codebase. Hence, we will be generating a `Software Bill of Materials (SBoM)`.
 
 A software BOM lists the licenses that govern those components, the versions of the components used in the codebase, and their patch status. It allows organizations to identify risk, allows for greater transparency, and enables rapid impact analysis.
 
