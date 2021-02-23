@@ -4,15 +4,17 @@
 
 This section aims to accomplish the objective listed as 3<sup>rd</sup> point of [`Task 2`](../problem-statement/#task-2) under the [Problem Statement](../problem-statement).
 
+We will be discussing the details, configuration and structure of a Jenkins pipeline in the following section.
+
 ## What is a Pipeline?
 
-In Jenkins, a pipeline is a group of events or jobs which are interlinked with one another in a sequence. These sequences helps us automate the building, testing and deployment of the application.
+In Jenkins, a pipeline is a group of events or jobs which are interlinked with one another in a sequence. These sequences help us automate the building, testing and deployment of the application.
 
 ## Setting up the Jenkins pipeline
 
 We have already setup Jenkins on a VM in the previous section. Now we will be using Jenkins to build a pipeline which will be responsible for fetching the latest application code from Github, building it and then copying it over to the application VM and deploying it.
 
-Jenkins provides a friendly web-interface to achieve all this. Equipped with the official pipelining building [guide](https://www.jenkins.io/doc/pipeline/tour/hello-world/){target="_blank"}, I took the following steps in order to setup the pipeline:
+Jenkins provides a friendly web-interface to achieve all this. Equipped with the official pipelining building [guide](https://www.jenkins.io/doc/pipeline/tour/hello-world/){target="_blank"}, I took the following steps in order to set up the pipeline:
 
 ### General
 
@@ -74,9 +76,9 @@ We will be using [`pm2`](https://pm2.keymetrics.io/){target="_blank"} which is a
 
 The application required environment variables setup for it to function properly. These were passed directly to the node application in the last step.
 
-To prevent accidental exposure of credentials via the `jenkinsfile`, I have used a feature of Jenkins known as `Secrets`. This allows us to define credentials in the Jenkins dashboard and use them wherever we need using the `credentials(ID)` function. The credentials show up masked as `****` in the logs as well.
+To prevent accidental exposure of credentials via the `jenkinsfile`, I have used a feature of Jenkins known as `Secrets`. This allows us to define credentials in the Jenkins dashboard and use them wherever we need using the `credentials(ID)` function. The credentials show up masked as `****` in the logs as well. These secrets can be defined by navigating to `Manage Credentials` option under the `Manage Jenkins` setting. We can add various types of secrets and use them in the `jenkinsfile` under the `environment{}` block.
 
-**Note: ** There are many other ways to pass environment variables to the application server, however the method above worked best for my situation. You can use Jenkins plugins, shell scripts etc. depending upon you use case and purpose.
+**Note: ** There are many other ways to pass environment variables to the application server, however the method above worked best for my situation. You can use Jenkins plugins, shell scripts etc. depending upon your use case and purpose.
 
 Once all this is done, we can commit the `jenkinsfile` to our repository and hit `Build Now` in the Jenkins control panel.
 

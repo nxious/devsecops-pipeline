@@ -4,6 +4,8 @@
 
 This section aims to accomplish the objective listed as 7<sup>th</sup> point of [`Task 2`](../problem-statement/#task-2) under the [Problem Statement](../problem-statement).
 
+We will be comparing the output of SAST tools used in the [previous section](../static-analysis) and discuss the results in the following section.
+
 ## Comparing the tools
 
 The tools used for SAST in the previous phase allowed us to scan for vulnerabilities in our source code of the application by applying various analysis methods. Each tool had a different approach and performed differently for the same application. The following comparison allows us to compare the tools used and check the different types of vulnerabilities identified.

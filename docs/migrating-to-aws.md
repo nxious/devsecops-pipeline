@@ -4,6 +4,8 @@
 
 In this section, we will be migrating our local VM setup to the cloud on AWS using various services as per [`Task 3`](../problem-statement/#task-3) listed under the [Problem Statement](../problem-statement).
 
+We will be discussing the details about our cloud platform, steps taken to transfer the local setup to the cloud and configure a new application deployment method in the following section.
+
 ## About AWS
 
 Amazon Web Services (AWS) is one of the major cloud providers. They have worldwide servers with a comprehensive catalog of services. We will be using these services to run our Jenkins machine and the application server in the cloud.
@@ -62,7 +64,7 @@ Once we SSH to our instance, we can proceed to set up Jenkins by following the s
 
 **Note:** The default user for SSH is `ubuntu.`
 
-We will be re-installing our complete toolset for various stages (SCA, SAST, etc.). All of the scripts created for the tools will be copied over from our local VM and uploaded to our instance via SFTP.
+We will be re-installing our complete toolset for various stages (SCA, SAST, etc.). All the scripts created for the tools will be copied over from our local VM and uploaded to our instance via SFTP.
 
 #### SCA Tools
 
@@ -88,11 +90,11 @@ audit.js was installed by following the same steps as mentioned in the [VM insta
 
 ##### njsscan
 
-retire.js was installed by following the same steps as mentioned in the [VM installation](../static-analysis/#installation).
+njsscan was installed by following the same steps as mentioned in the [VM installation](../static-analysis/#installation).
 
 ##### insider
 
-retire.js was installed by following the same steps as mentioned in the [VM installation](../software-composition-analysis/#installation_1).
+insider was installed by following the same steps as mentioned in the [VM installation](../software-composition-analysis/#installation_1).
 
 ##### snyk.io
 
@@ -140,13 +142,21 @@ To deploy our application on ECS, we need to build a Docker image of our applica
 
 DVNA comes with a `dockerfile` which contains all the information required to convert it into an image. The `dockerfile` contains the requirements of the application, such as node.js and lists the steps to be executed in order to get the application up and running. Steps for deploying DVNA using Docker have been listed in the application's [readme](https://github.com/appsecco/dvna#using-official-docker-image){target="_blank"}.
 
+To build an image we can use the following command:
+
+```
+docker build -t username/dvna .
+```
+
+Once the build is successful, we can list all available docker images by using `docker images`.
+
 ### Configuring ECR (Elastic Container Registry)
 
 ECR is a container registry which allows us to easily store, manage, share and deploy container images. This eliminates the need for third-party repositories for maintaing our container images. We will be creating a new registry for our application. 
 
 Once the registry is created, we can use the show push commands button to get a list of steps that we can follow to push our image to the repository.
 
-To authenticate with the repostiory, we need to configure AWS CLI. 
+To authenticate with the repostiory via CLI, we need to configure AWS CLI. 
 
 #### Configuring AWS CLI
 
@@ -160,7 +170,7 @@ AWS CLI can be installed either by following the official documentaiton, or by u
 sudo apt install awscli
 ```
 
-**Note:** This command will work only if your distributions's . If the package is not found, please follow the manual installation method mentioned in the official documentaiton.
+**Note:** This command will work only if your distributions's package repository contains awscli. If the package is not found, please follow the manual installation method mentioned in the official documentaiton [here](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html){target="_blank"}.
 
 ##### Usage
 
@@ -180,8 +190,46 @@ A task definition in ECS is required to run the container image. It is the confi
 
 ### Cluster creation
 
-A cluster is
+A cluster is a logical grouping of tasks or services. A cluster allows us to group services and tasks related to a specific application for easier identification and management.
 
 ### Service creation
 
-**Note :** While running the service for the first time, the deployment failed and container logs showed the error 'Unable to find host' which was caused due to the missing MySQL environment variables. After adding the required environment variables related to the MySQL database, the container deployed successfully.
+A service in ECS allows us to run and maintain multiple deployments of a task definition simultaneously in a cluster.
+
+**Note :** While running the service for the first time, the deployment failed and container logs showed the error 'Unable to find host' which was caused due to the missing MySQL environment variables. After adding the required environment variables related to the MySQL database in the task settings, the container deployed successfully.
+
+### Final deployment steps
+
+The flow of our ECS deployment will be :
+
+Jenkins finishes various scans and runs the deployment script -> Application code is cloned from Github repository -> A new image is built of the application -> The image is pushed to ECR -> The running task is stopped -> A new task is automatically started by the service -> Older images and files are cleaned
+
+All these steps will be carried out using a shell script. The contents of the shell script are as follows:
+
+```
+#!/bin/bash
+
+# Clone application from Github repository
+git clone https://github.com/nxious/dvna
+cd dvna
+
+# Logging into ECR
+aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin XXXXXXXXXXXX.dkr.ecr.us-east-2.amazonaws.com
+
+# Building the application image
+docker build -t dvna .
+
+# Tagging the image
+docker tag dvna:latest XXXXXXXXXXXX.dkr.ecr.us-east-2.amazonaws.com/dvna:latest
+
+# Push image to ECR
+docker push XXXXXXXXXXXX.dkr.ecr.us-east-2.amazonaws.com/dvna:latest
+
+# List currently running tasks
+#task=$(aws ecs list-tasks --cluster default --output json | jq -r .taskArns[0])
+task=$(aws ecs list-tasks --cluster "default" --service "DeployDVNA" --output text --query taskArns[0])
+
+# Stop running tasks
+aws ecs stop-task --cluster default --task "$task" &> /dev/null
+```
+

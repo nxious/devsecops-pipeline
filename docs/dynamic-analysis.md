@@ -4,6 +4,8 @@
 
 This section aims to accomplish the objective listed as 8<sup>th</sup> point of [`Task 2`](../problem-statement/#task-2) under the [Problem Statement](../problem-statement).
 
+We will be discussing the details of Dynamic Application Security Testing along with the tool used to perform DAST as well as their installation and configuration in the following section.
+
 ## What is DAST?
 
 DAST is a method of black-box testing, which involves examining the application and its execution to find vulnerabilities externally. The source code is not available, only access to the application in its running state is provided. The tools used for DAST have generally automated testing suites. 

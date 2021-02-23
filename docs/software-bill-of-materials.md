@@ -4,7 +4,7 @@
 
 This section aims to accomplish the objective listed as 10<sup>th</sup> point of [`Task 1`](../problem-statement/#task-2) under the [Problem Statement](../problem-statement).
 
-We will be generating a Software Bill of Materials (SBoM) for our application.
+In this section we will be installing and configuring the tool for generating a Software Bill of Materials (SBoM) for our application.
 
 ## What is SBoM?
 

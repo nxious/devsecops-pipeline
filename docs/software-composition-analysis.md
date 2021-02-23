@@ -4,6 +4,8 @@
 
 This section aims to accomplish the objective listed as 4<sup>th</sup> point of [`Task 2`](../problem-statement/#task-2) under the [Problem Statement](../problem-statement).
 
+We will be discussing the details of Software Composition Analysis along with the tools used to perform SCA as well as their installation and configuration in the following section.
+
 ## What is SCA?
 
 Software Composition Analysis (SCA) is a segment of the application security testing (AST) tool group that deals with managing open source component use. SCA tools perform automated scans of an application's codebase, including related artifacts such as containers and registries, to identify all open source components, license compliance data, and security vulnerabilities.

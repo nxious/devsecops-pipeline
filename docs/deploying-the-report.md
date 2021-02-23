@@ -4,7 +4,7 @@
 
 This section aims at completing the objectives listed under [`Task 1`](../problem-statement#task-1) as per the [Problem Statement](../problem-statement).
 
-We will be 
+We will be discussing the need for documentation along with the tools used and environment setup for same in the following section.
 
 ## Need for documentation
 
@@ -12,7 +12,7 @@ The presence of documentation assists with all parts of an application, enhancin
 
 ## Tools and methodology
 
-The tools I used to build and deploy the documentation are MkDocs, Netlify, and Github. The goal was to generate the documentation using MkDocs, push it to Github, and deploy it via Netlify. 
+The tools I used to build and deploy the documentation are MkDocs, Netlify, and Github. The goal was to generate the documentation using MkDocs, push it to Github, and deploy it via Netlify.
 
 ## [MkDocs](https://www.mkdocs.org){target="_blank"}
 

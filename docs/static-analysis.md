@@ -4,6 +4,8 @@
 
 This section aims to accomplish the objective listed as 6<sup>th</sup> point of [`Task 2`](../problem-statement/#task-2) under the [Problem Statement](../problem-statement).
 
+We will be discussing the details of Static application security testing along with the tools used to perform SAST as well as their installation and configuration in the following section.
+
 ## What is SAST?
 
 SAST is testing the application source code, byte code and binaries for bugs and design errors from "inside out" before the application is deployed. It helps us detect and fix any problems that may introduce security vulnerabilities in the application.

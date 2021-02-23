@@ -4,6 +4,8 @@
 
 This section aims to accomplish the objectives listed as 1<sup>st</sup> and 2<sup>nd</sup> point of [`Task 2`](../problem-statement/#task-2) under the [Problem Statement](../problem-statement).
 
+We will be discussing various steps taken to set up a local environment for running Jenkins and deploying the application in the following section.
+
 ## System Configuration
 
 The project requires setting up two virtual machines using Ubuntu 18.04 LTS as the operating system. [VirtualBox](https://www.virtualbox.org/){target="_blank"} was used  
