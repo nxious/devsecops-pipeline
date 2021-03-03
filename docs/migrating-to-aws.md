@@ -235,3 +235,7 @@ task=$(aws ecs list-tasks --cluster "default" --service "DeployDVNA" --output te
 aws ecs stop-task --cluster default --task "$task" &> /dev/null
 ```
 
+## Secrets Management
+
+We will be using a secrets management service in order to seperate any credentials such as usernames, passwords and API keys. This service is named as Paramter Store and is a service provided as a feature of AWS Systems Manager. 
+

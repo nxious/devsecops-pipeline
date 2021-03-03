@@ -19,4 +19,5 @@
 ## Task 3
 
 1. Migrate the local setup to AWS Cloud.
-2. Deploy the app in a containerzied environment using using AWS ECS and ECR.
+2. Deploy the app in a containerzied environment using AWS ECS and ECR.
+3. Use Parameter Store (AWS Systems Manager feature) to store secrets.
