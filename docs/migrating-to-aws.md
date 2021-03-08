@@ -4,7 +4,7 @@
 
 In this section, we will be migrating our local VM setup to the cloud on AWS using various services as per [`Task 3`](../problem-statement/#task-3) listed under the [Problem Statement](../problem-statement).
 
-We will be discussing the details about our cloud platform, steps taken to transfer the local setup to the cloud and configure a new application deployment method in the following section.
+We will be discussing the details about our cloud platform, steps taken to transfer the local setup to the cloud and configure a new application deployment method along with database setup and secrets management in the following section.
 
 ## About AWS
 
@@ -28,13 +28,15 @@ Since our VMs were running on Ubuntu Server 18.04, we will proceed with the same
 
 We will be launching a `t2.medium` instance, which is equipped with 2 CPU cores and 4 GB RAM, sufficient for running Jenkins and various tools.
 
+**Note: **The instance was later upgraded to a `t2.large` size as the RAM requirements increased with the inclusion of various new tools.
+
 ![Instance Size Selection](images/size-selection.png)
 
-We will continue with the default settings for Instance Details as there are no changes required here.
+We will continue with the default settings for Instance Details as there are no changes required for us here.
 
 ![Instance Details](images/instance-details.png)
 
-The instance storage will be increased to 10GB as it is the minimum recommended amount and will allow us to store various applications, scripts and maintain logs and artifacts.
+The instance storage will be increased to 10GB as it is the minimum [recommended](https://www.jenkins.io/doc/book/scaling/hardware-recommendations/){target="_blank"} amount and will allow us to store various applications, scripts and maintain logs and artifacts.
 
 ![Instance Storage](images/storage.png)
 
@@ -80,7 +82,7 @@ retire.js was installed by following the same steps as mentioned in the [VM inst
 
 OWASP Dependency Check was installed by following the same steps as mentioned in the [VM installation](../software-composition-analysis/#installation_2).
 
-**Note:** While running the pipeline, Dependency Check was unable to locate the `yarn audit` command, which had to be installed manually using `npm install yarn -g.`
+**Note:** While running the pipeline, Dependency Check was unable to locate the `yarn audit` command as per the logs, which had to be installed manually using `npm install yarn -g.`
 
 ##### audit.js
 
@@ -100,9 +102,9 @@ insider was installed by following the same steps as mentioned in the [VM instal
 
 snyk.io was installed by following the same steps as mentioned in the [VM installation](../software-composition-analysis/#installation_2). The API key was set as a secret in Jenkins.
 
-##### Sonarqube Scanner
+##### SonarQube Scanner
 
-Sonarqube Scanner was installed by following the same steps as mentioned in the [VM installation](../software-composition-analysis/#installation_3). The token was set as a Jenkins secret.
+SonarQube Scanner was installed by following the same steps as mentioned in the [VM installation](../software-composition-analysis/#installation_3). The token was set as a Jenkins secret.
 
 The SonarQube server was set to launch at boot by adding the following command to `crontab -e`:
 
@@ -116,7 +118,7 @@ The DAST phase consists of a single tool, OWASP ZAP. The tool was installed and 
 
 #### ESLint (Code Linting)
 
-ESLint was installed by following the same steps as mentioned in the [VM installation](../code-linting/#installtion). The initial config command was run in the root directory of DVNA.
+ESLint was installed by following the same steps as mentioned in the [VM installation](../code-linting/#installation). The initial config command was executed in the root directory of DVNA.
 
 #### CycloneDX (SBoM)
 
@@ -138,7 +140,7 @@ Amazon Elastic Container Service (Amazon ECS) is a container management service 
 
 To deploy our application on ECS, we need to build a Docker image of our application, push it to a registry and define a task under a service which will deploy the container after pulling it from the registry.
 
-### Builiding the docker image
+### Building the docker image
 
 DVNA comes with a `dockerfile` which contains all the information required to convert it into an image. The `dockerfile` contains the requirements of the application, such as node.js and lists the steps to be executed in order to get the application up and running. Steps for deploying DVNA using Docker have been listed in the application's [readme](https://github.com/appsecco/dvna#using-official-docker-image){target="_blank"}.
 
@@ -152,11 +154,11 @@ Once the build is successful, we can list all available docker images by using `
 
 ### Configuring ECR (Elastic Container Registry)
 
-ECR is a container registry which allows us to easily store, manage, share and deploy container images. This eliminates the need for third-party repositories for maintaing our container images. We will be creating a new registry for our application. 
+ECR is a container registry which allows us to easily store, manage, share and deploy container images. This eliminates the need for third-party repositories for maintaining our container images. We will be creating a new registry for our application. 
 
 Once the registry is created, we can use the show push commands button to get a list of steps that we can follow to push our image to the repository.
 
-To authenticate with the repostiory via CLI, we need to configure AWS CLI. 
+To authenticate with the repository via CLI, we need to configure AWS CLI. 
 
 #### Configuring AWS CLI
 
@@ -164,17 +166,17 @@ AWS CLI is a tool which allows us to access and manage AWS services via the comm
 
 ##### Installation
 
-AWS CLI can be installed either by following the official documentaiton, or by using the following command:
+AWS CLI can be installed either by following the official documentation, or by using the following command:
 
 ```
 sudo apt install awscli
 ```
 
-**Note:** This command will work only if your distributions's package repository contains awscli. If the package is not found, please follow the manual installation method mentioned in the official documentaiton [here](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html){target="_blank"}.
+**Note:** This command will work only if your distribution's package repository contains awscli. If the package is not found, please follow the manual installation method mentioned in the official documentation [here](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html){target="_blank"}.
 
 ##### Usage
 
-To autheticate our AWS account using the CLI, we need to run the command:
+To authenticate our AWS account using the CLI, we need to run the command:
 
 ```
 aws configure
@@ -182,7 +184,7 @@ aws configure
 
 This command will prompt us to input our AWS Access Key ID and Secret Access Key. These details are generally provided along with your AWS IAM account details.
 
-Once we are autheticated via AWS CLI, we can proceed to follow the push commands provided by ECR.
+Once we are authenticated via AWS CLI, we can proceed to follow the push commands provided by ECR.
 
 **Note:** Please make sure the correct region is specified while using `aws configure` and creating a repository. ECR and ECS items can only be accessed in the region they are deployed.
 
@@ -235,7 +237,67 @@ task=$(aws ecs list-tasks --cluster "default" --service "DeployDVNA" --output te
 aws ecs stop-task --cluster default --task "$task" &> /dev/null
 ```
 
+This script was stored along with rest of the scripts and added to the jenkinsfile as a replacement for the earlier EC2 deployment stage:
+
+```
+stage ('Deploying the application') {
+    steps{
+        sh '''
+            bash ~/scripts/deploy_dvna_ecs.sh 
+            rm -rf ./*
+        '''
+    }
+}
+```
+
+## Database Setup
+
+Since our application uses a MySQL database for storing information, we can use Amazon RDS (Relational Database Service) to host our database as a separate entity. 
+
+We can access the RDS Dashboard by navigation to the AWS Management Console and searching for RDS in the search bar. The RDS Dashboard will allow us to create a DB instance based on MySQL which we will use for our application.
+
+![RDS Dashboard](../images/rds-dashboard.png)
+
+Since our application is small scale and the database requirements are minimal, we will be deploying a db.t2.micro size instance which comes with 1GiB RAM and 1 vCPU.
+
+In order to access this instance from our ECS deployment, we need to have both services running under the same VPC. The endpoint is not public and can only be accessed from machines within the VPC.
+
+To create our database for DVNA, we will proceed by clicking the orange `Create database` button in the RDS dashboard. We will be using the standard create procedure as it will allow us to access some advance options for creating the database. The engine we will be using is MySQL 8.0.20 which will be created using the Free Tier template. The database was named `dvna` and the credentials were set. Rest of the configuration remained untouched except the Connectivity part, where the VPC containing our ECS instance was selected and public access was turned off.
+
+Once the RDS instance is up and running, the endpoint can be obtained by navigating to the `Connectivity & security` section of the database instance. We can test the access by using the following command in our EC2 instance or the ECS deployment:
+
+```
+mysql -u root -h dvna.XXXXXXXXXXXX.us-east-2.rds.amazonaws.com -p
+```
+
+We can now use the database details in our deployments which need to be passed as environment variables.
+
 ## Secrets Management
 
-We will be using a secrets management service in order to seperate any credentials such as usernames, passwords and API keys. This service is named as Paramter Store and is a service provided as a feature of AWS Systems Manager. 
+We will be using a secrets management service in order to securely store any credentials such as usernames, passwords and API keys and pass them straight to the point where they will be used. This service we will be using for our ECS deployments is Parameter Store and is a provided as a feature of AWS Systems Manager. 
 
+We can access Parameter Store dashboard by either navigating to the Systems Manager and selecting Parameter Store on the left sidebar under Application Management or by directly searching for it using the search bar on the top.
+
+Each secret can either be stored individually or in a hierarchical structure. We will be creating five secrets for our application's database, namely the database name, username, port, password and the endpoint (URL for accessing the database). These secrets will be stored as parameter values, and henceforth be known as parameters. 
+
+To create a new parameter, we can use the orange `Create parameter` button on the Parameter Store dashboard. Here we can define the name, description, type, data type and value of the parameter we wish to store. We will be creating the parameters under the `/production` base as we are deploying the production version of the application. Once we have created the parameter, we can pass them as environment variables to our ECS Task by passing the ARN of the secret as the value.
+
+![Parameter Store](../images/parameter-store.png)
+
+Here, each parameter can be accessed as a secret. The `DVNA_RDS_DB` parameter contains a value while `DVNA_RDS_DB/password` will contain another value being the child of the parent parameter.
+
+Each of the parameters are associated with a unique ARN (Amazon Resource Name), which can be used to access the specific resource. This ARN can be obtained thru awscli by using the command:
+
+```
+aws ssm get-parameters --names "ParameterName"
+```
+
+The ARNs can now be passed as a `ValueFrom` type in the environment variables of the container. 
+
+![Environment Variables](../images/environment-variables.png)
+
+**Note: ** While running ECS task for the first time after defining the parameters, the environment variables were not set as the access to parameters was denied. This was due to the Parameter Store roles being assigned to my personal IAM role instead of `ecsTaskExecutionRole`, which is the role used on my behalf while running the ECS tasks. This was fixed by assigning the Parameter Store permissions to the `ecsTaskExecutionRole`.
+
+**Note: ** Upon defining the Parameter Store secrets as environment variables and running the ECS task, the logs indicated a `Client does not support authentication protocol requested by server; consider upgrading MySQL client` error which was the [same error](/setting-up-vms/#configuring-the-application-vm) I faced while deploying the database for first time in the VM. This was resolved by using the same method mention [here](https://stackoverflow.com/questions/50093144/mysql-8-0-client-does-not-support-authentication-protocol-requested-by-server){target="_blank}.
+
+**Note: ** While defining environment variables in the container definition of a task, the environment variables can either be passed as a `Value` or `ValueFrom` type, the difference being that `Value` type will pass the actual value defined whereas the `ValueFrom` type will fetch the value from the passed AWS ARN. A single environment variable being set as `Value` type was preventing my application from being deployed successfully. This was resolved by creating a new revision of the task definition and changing the environment variable type from `Value` to `ValueFrom`.

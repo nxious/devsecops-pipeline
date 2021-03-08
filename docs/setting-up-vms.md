@@ -34,7 +34,7 @@ After the setup was complete and the plugins finished installing, I was able to 
 
 ## Choosing the application
 
-The application that I have chosen for my pipeline is [DVNA (Damn Vulnerable Node Application)](https://github.com/appsecco/dvna){target="_blank"}. It is a simple NodeJS application to demonstrate OWASP Top 10 Vulnerabilities and guide on fixing and avoiding these vulnerabilities. 
+The application that I have chosen for my pipeline is [DVNA (Damn Vulnerable Node Application)](https://github.com/appsecco/dvna){target="_blank"}. It is a NodeJS application designed to demonstrate OWASP Top 10 Vulnerabilities and comes with a guide on fixing and avoiding these vulnerabilities. 
 
 ## Configuring the application VM
 
@@ -64,4 +64,40 @@ Once all the configuration is completed, we can launch the app using `npm start`
 
 I setup SSH access to the application server from the `Jenkins` user on the Jenkins server. This was done in order to allow Jenkins to issue commands to the application server while deploying the application. This was done using the guide [here](https://www.tecmint.com/ssh-passwordless-login-using-ssh-keygen-in-5-easy-steps/){target="_blank"}.
 
-Once the public key was setup on the application server, SSH was possible without providing any passwords or keys. The configuration automatically handles the key exchanges.
+First we need to login to our Jenkins server to generate SSH keys. We need to make sure we are generating the keys for jenkins user as it will be the one running the commands. As jenkins user doesn't have a password, we need to perform `su` using `sudo` :
+
+```
+sudo su jenkins
+```
+
+Once we are logged in as jenkins, we can proceed to generate the SSH keypair by using the command:
+
+```
+ssh-keygen -t rsa
+```
+
+This command will generate a public and private key for our user. The public key will be copied over to the `authorized_keys` folder on destination server in order to allow authentication without passing any key or password. 
+
+We will be creating a `.ssh` directory which will contain the public key.
+
+```
+ssh common@192.168.1.5 mkdir -p .ssh
+```
+
+Here, `common` is the username of user we will be logging into and `192.168.1.5` is the IP of destination server to which we will be copying our application.
+
+Now we will copy the public key of jenkins user to the remote server:
+
+```
+cat .ssh/id_rsa.pub | ssh common@192.168.1.5 'cat >> .ssh/authorized_keys'
+```
+
+Once the key is copied over to the destination server, we need to set permissions for the key:
+
+```
+ssh common@192.168.1.5 "chmod 700 .ssh; chmod 640 .ssh/authorized_keys"
+```
+
+In order to modify the permissions of the key, we need to enter the remote user's password once. 
+
+Once the public key is set up on the application server, SSH is possible without providing any passwords or keys. This configuration automatically handles the key exchanges.
