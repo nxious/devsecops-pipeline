@@ -8,11 +8,13 @@ We will be discussing various steps taken to set up a local environment for runn
 
 ## System Configuration
 
-The project requires setting up two virtual machines using Ubuntu 18.04 LTS as the operating system. [VirtualBox](https://www.virtualbox.org/){target="_blank"} was used  
+The project requires setting up two virtual machines using Ubuntu 18.04 LTS as the operating system. [VirtualBox](https://www.virtualbox.org/){target="_blank"} was installed and used to create the two virtual machines required for our setup.
 
 The installation was performed using the following guide : [Ubuntu 18.04 Virtual Machine Setup](https://codebots.com/library/techies/ubuntu-18-04-virtual-machine-setup){target="_blank"}
 
-The guide was sufficient and covered all the required steps including installation of the OpenSSH server. 
+The core count was increased to 2 and RAM was set to 8GB to provide sufficient resources to both machines.
+
+The guide was elaborate and covered all the required steps including installation of the OpenSSH server for SSH access to the VM.
 
 **Note: ** The network adapters were set to Bridged mode in order to allow independent IP assignment on my router itself. This allows me to access the servers via SSH and via a browser on the host machine and allows the Virtual Machines to act as real machines from a network point of view.
 
@@ -20,7 +22,7 @@ The guide was sufficient and covered all the required steps including installati
 
 Jenkins is the leading open-source automation server. We will be using this tool to build our Continuos Integration (CI) pipeline for an application.
 
-To install Jenkins on Ubuntu Server 18.04, I followed the official guide for Linux listed on Jenkin's website which can be found [here](https://www.jenkins.io/doc/book/installing/linux/#debianubuntu){target="_blank"}.
+To install Jenkins on Ubuntu Server 18.04, I followed the official guide for Linux listed on Jenkins's website which can be found [here](https://www.jenkins.io/doc/book/installing/linux/#debianubuntu){target="_blank"}.
 
 ![Jenkins Setup](images/Jenkins.png)
 
