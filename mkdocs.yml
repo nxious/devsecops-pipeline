@@ -19,6 +19,8 @@ nav:
 - Software Bill of Materials (SBoM): 'software-bill-of-materials.md'
 - Final Pipeline Structure: 'final-pipeline-structure.md'
 - Migrating to AWS: 'migrating-to-aws.md'
+- Webhook setup: 'webhook-setup.md'
+- Pipeline limitations: 'pipeline-limitations.md'
 - Resources and references: 'resources-and-references.md'
 
 theme: 

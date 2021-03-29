@@ -17,4 +17,5 @@ The following are the various contents of this report as per the problem stateme
 - [Software Bill of Materials (SBoM)](../software-bill-of-materials)
 - [Final Pipeline Structure](../final-pipeline-structure)
 - [Migrating to AWS](../migrating-to-aws)
+- [Pipeline limitations](../pipeline-limitations)
 - [Resources and references](../resources-and-references)

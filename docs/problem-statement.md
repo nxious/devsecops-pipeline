@@ -18,6 +18,10 @@
 
 ## Task 3
 
-1. Migrate the local setup to AWS Cloud.
-2. Deploy the app in a containerzied environment using AWS ECS and ECR.
+1. Migrate the local pipeline setup to AWS Cloud.
+2. Deploy the app in a containerized environment using AWS ECS and ECR.
 3. Use Parameter Store (AWS Systems Manager feature) to store secrets.
+
+## Task 4
+
+1. Recognize the limitations of the DVNA pipeline and point out any assumptions made by building a similar pipeline for a different application.
