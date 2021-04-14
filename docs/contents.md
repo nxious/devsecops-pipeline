@@ -18,4 +18,5 @@ The following are the various contents of this report as per the problem stateme
 - [Final Pipeline Structure](../final-pipeline-structure)
 - [Migrating to AWS](../migrating-to-aws)
 - [Pipeline limitations](../pipeline-limitations)
+- [Publishing logs](../fluentbit-setup)
 - [Resources and references](../resources-and-references)

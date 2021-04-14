@@ -25,3 +25,4 @@
 ## Task 4
 
 1. Recognize the limitations of the DVNA pipeline and point out any assumptions made by building a similar pipeline for a different application.
+2. Implement Jenkins log publishing to S3 using fluent-bit.
