@@ -60,7 +60,7 @@ Total		    0
 
 The reason for not providing an actual security score is the lack of RegEx based SAST rules for Javascript in insider. Since it is an open-source tool, the rule set is limited.
 
-The complete reportsnake be accessed [here](/reports/insider-report.json){target="_blank"}.
+The complete report be accessed [here](/reports/insider-report.json){target="_blank"}.
 
 ### snyk.io
 

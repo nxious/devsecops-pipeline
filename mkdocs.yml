@@ -21,7 +21,6 @@ nav:
 - Migrating to AWS: 'migrating-to-aws.md'
 - Webhook setup: 'webhook-setup.md'
 - Pipeline limitations: 'pipeline-limitations.md'
-- Publishing logs: 'fluentbit-setup.md'
 - Resources and references: 'resources-and-references.md'
 
 theme: 
