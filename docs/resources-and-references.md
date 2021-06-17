@@ -34,4 +34,4 @@
 
 [https://snyk.io/](https://snyk.io/){target="_blank"}
 
-[https://www.sonarqube.org/](https://www.sonarqube.org/){target="_blank"}\
+[https://www.sonarqube.org/](https://www.sonarqube.org/){target="_blank"}
